@@ -1,1 +1,48 @@
 /* layout */
+
+body {}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+}
+
+#header {
+	background: url('../images/bg_header.jpg') top center no-repeat;
+	height: 148px;
+}
+
+#nav {
+	background: url('../images/bg_navRepeat.png') top center repeat-x;
+}
+
+#body {
+	padding: 25px 0;
+}
+
+#top {
+
+}
+
+#content {
+	float: left;
+	width: 620px;
+	padding: 0 0 25px 0;
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+	padding: 0 0 0 19px;
+	border-left: 1px solid #ebe9e8;
+}
+
+#bottom {
+	
+}
+
+#footer {
+	
+}
