@@ -56,25 +56,37 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 <body class="<?= $menu ?>">
 
-	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
-
-		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
-
-			<article>
-				<jdoc:include type="component" />
-			</article>
+	<div id="header"><div class="container">
+		<jdoc:include type="modules" name="header" style="xhtml" />
+	</div></div>
+	
+	<div id="nav"><div class="container">
+		<jdoc:include type="modules" name="nav" style="xhtml" />
+	</div></div>
+	
+	<div id="body"><div class="container">
+		<div id="top">
+			<jdoc:include type="modules" name="top" style="xhtml" />
 		</div>
+		<div id="content">
+			<jdoc:include type="component" />
+		</div>
+		<div id="sidebar">
+			<jdoc:include type="modules" name="sidebar" style="xhtml" />
+		</div>
+		<div class="clear"></div>
+		<div id="bottom">
+			<jdoc:include type="modules" name="bottom" style="xhtml" />
+		</div>
+	</div></div>
+	<div class="clear"></div>
 
-		<footer>
-			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
-	</div>
+	<div id="footer"><div class="container">
+		<jdoc:include type="modules" name="footer" style="xhtml" />
+		<div id="copyright">
+		
+		</div>
+	</div></div>
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />
