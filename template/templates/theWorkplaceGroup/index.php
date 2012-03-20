@@ -32,6 +32,8 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	<?= ($testing)? '':  '<meta http-equiv="X-UA-Compatible" contents="IE=edge,chrome=1">' ?>
 
  	<jdoc:include type="head" />
+	<script type="text/javascript" src="http://use.typekit.com/ual2mis.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
