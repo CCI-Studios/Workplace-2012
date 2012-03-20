@@ -18,43 +18,81 @@
 	padding: 0 5px;
 }
 
-.moduletable_vmenu > ul > li > a,
-.moduletable_vmenu > ul > li > span {
-	display: block;
+.moduletable_hmenu.primary {
+	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 }
 
-.moduletable_vmenu > ul > li > a span,
-.moduletable_vmenu > ul > li > span span {
-	
+.moduletable_hmenu.primary .menu > li:first-child {padding: 0 20px 0 0;}
+.moduletable_hmenu.primary .menu > li {
+	padding: 0 20px 4px;
+	line-height: 50px;
 }
 
-.moduletable_vmenu ul ul {
+.moduletable_hmenu.primary .menu div {
+	background: url('../images/menu_dropdownTop.png') top center no-repeat;
 	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-}
-/* /hmenu */
-
-
-/* @group vmenu */
-.moduletable_vmenu {}
-
-.moduletable_vmenu > ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.moduletable_vmenu ul ul {
-	margin: 0.5em 0 1em 1em;
-	list-style: none;
-}
-
-.moduletable_vmenu li {
+	top: 49px;
+	left: 0px;
+	z-index: 2;
 	
+	font-size: 16px;
+	display: none;
+	width: 224px;
+	padding: 6px 0 0 0;
+	z-index: 2;
 }
-/* /vmenu */
+
+.moduletable_hmenu.primary .menu div ul {
+	background: url('../images/menu_dropdownBottom.png') bottom center no-repeat;
+	position: relative;
+	left: 5px;
+	width: 214px;
+	margin: 0;
+	padding: 0 0 11px 0;
+	list-style: none;
+}
+.moduletable_hmenu.primary .menu div li {
+	background-color: #bece83 ;
+	line-height: 22px;
+	padding: 0 13px;
+}
+
+.moduletable_hmenu.primary .menu > li:hover div {display: block;}
+
+.moduletable_hmenu.primary a,
+.moduletable_hmenu.primary span {
+	cursor: default;
+	color: #fff;
+	text-shadow: 1px 1px 1px #43520e;
+}
+.moduletable_hmenu.primary .menu > li:hover {
+	background: url('../images/nav_rollover.png') center center no-repeat;
+}
+
+.moduletable_hmenu.primary .menu > li ul > li:hover {
+	background-color: #b4c574
+}
+
+.moduletable_hmenu.primary a:hover,
+.moduletable_hmenu.primary .menu span:hover {
+	text-decoration: none;
+}
+
+.moduletable_hmenu.primary li.social {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	padding: 0 0 0 10px;
+}
+.moduletable_hmenu.primary li.social ~ li.social { right: 45px; }
+.moduletable_hmenu.primary li.social ~ li.social ~ li.social { right: 80px; }
+.moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social { right: 115px; }
+.moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social ~ li.social { right: 150px; }
+.moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social{ right: 185px; }
+.moduletable_hmenu.primary li.social:hover {background: none;}
+/* logo */
 
 .moduletable.logo {
 	position: absolute;
