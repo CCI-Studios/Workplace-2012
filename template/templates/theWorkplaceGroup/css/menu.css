@@ -165,16 +165,16 @@
 .moduletable_hmenu.secondary .menu > li.social {
 	width: 27px;
 	position: absolute;
-	top: 90px;
+	top: 65px;
 	right: 140px;
 }
 
 .moduletable_hmenu.secondary .menu > li.social ~ li.social { right: 105px; }
 .moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social { right: 70px; }
 .moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social { right: 35px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 140px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 105px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 70px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 100px; right: 140px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { right: 105px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { right: 70px; }
 
 /* Mini Menu */
 /* header */
