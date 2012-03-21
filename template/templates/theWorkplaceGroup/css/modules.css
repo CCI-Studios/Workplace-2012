@@ -8,3 +8,34 @@
 	top: 30px;
 	left: 0px;
 }
+
+#bottom .moduletable:first-child {margin-left: 0;}
+#bottom .moduletable {
+	float: left;
+	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
+	border: 1px solid #ebe9e8;
+	border-radius: 7px;
+	font-size: 12px;
+	padding: 15px 20px;
+	margin-left: 17px;
+	width: 260px;
+}
+#bottom .moduletable.spotlight {
+	background: url('../images/bg_bottomModuleSpotlight.jpg') bottom center no-repeat;
+}
+
+#bottom .moduletable h3 {
+	font-size: 18px;
+	color: #a3b94f;
+	margin: 0 0 5px 0;
+}
+#bottom .moduletable p:first-child {margin: 0;}
+#bottom .moduletable p {
+	width: 57%;
+	margin: 5px 0 0 0; 
+}
+#bottom .moduletable p.date {
+	font-size: 11px;
+	margin: 3px 0 0 0;
+	color: #a3b94f;
+}
