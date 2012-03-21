@@ -48,5 +48,6 @@ body {}
 }
 
 #footer {
-	
+	background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
+	padding: 20px 0;
 }
