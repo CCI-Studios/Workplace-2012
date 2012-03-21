@@ -83,8 +83,10 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 	<div id="footer"><div class="container">
 		<jdoc:include type="modules" name="footer" style="xhtml" />
-		<div id="copyright">
-		
+		<div class="clear"></div>
+		<div class="copyright">
+				<span class="left">&copy; <?php echo date('Y') ?> The WorkPlace Group. All Rights Reserved.</span>
+				<span class="right"><a href="http://ccistudios.com">Site by CCI Studios</a></span>
 		</div>
 	</div></div>
 
