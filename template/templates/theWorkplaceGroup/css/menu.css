@@ -1,4 +1,5 @@
 /* @group hmenu */
+/* combined menu styles */
 .moduletable_hmenu.primary,
 .moduletable_hmenu.smallHeader { font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif; }
 
@@ -15,6 +16,16 @@
 	
 	padding: 0 5px;
 }
+
+.moduletable_hmenu.secondary li > a:hover,
+.moduletable_hmenu.secondary li li a:hover,
+.moduletable_hmenu.slideshowFooter li a:hover,
+.moduletable_hmenu.smallFooter li a:hover { 
+	color: #a3b94f;
+	text-decoration: none;
+}
+
+/* end of combined menu styles */
 
 .moduletable_hmenu.primary {
 	font-size: 20px;
@@ -120,7 +131,8 @@
 }
 
 .moduletable_hmenu.secondary .menu > li > a,
-.moduletable_hmenu.secondary .menu > li > span {
+.moduletable_hmenu.secondary .menu > li > span,
+.moduletable_hmenu.smallFooter {
 	font-size: 14px;
 	font-weight: normal;
 	text-shadow: 1px 1px 1px #3a251f;
@@ -133,20 +145,13 @@
 	font-weight: 300;
 }
 
-.moduletable_hmenu.secondary li > a:hover,
-.moduletable_hmenu.secondary li li a:hover,
-.moduletable_hmenu.smallFooter li a:hover { 
-	color: #a3b94f;
-	text-decoration: none;
-}
-
 .moduletable_hmenu.secondary .menu > li.outline,
-.moduletable_hmenu.smallFooter li.outline {
+.moduletable_hmenu.slideshowFooter li {
 	font-weight: 300;
-	width: 130px;
+	width: 160px;
 	position: absolute;
 	top: 0;
-	right: 200px;
+	right: 175px;
 }
 
 .moduletable_hmenu.secondary .menu > li.outline ~ li.outline { top: 20px; }
@@ -161,23 +166,27 @@
 	width: 27px;
 	position: absolute;
 	top: 90px;
-	right: 150px;
+	right: 140px;
 }
 
-.moduletable_hmenu.secondary .menu > li.social ~ li.social { right: 115px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social { right: 80px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social { right: 45px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 150px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 115px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 80px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social { right: 105px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social { right: 70px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social { right: 35px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 140px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 105px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 125px; right: 70px; }
 
-/* small menu - header */
+/* Mini Menu */
+/* header */
+.moduletable_hmenu.smallHeader,
+.moduletable_hmenu.smallFooter {
+	font-size: 14px;
+	font-weight: 700;
+}
 
 .moduletable_hmenu.smallHeader {
 	background: url('../images/bg_headerMenu.png') left top no-repeat;
 	float: right;
-	font-size: 14px;
-	font-weight: 700;
 	width: 353px;
 	padding: 0 0 9px 0px;
 }
@@ -197,10 +206,16 @@
 
 .moduletable_hmenu.smallHeader li a { color: #422b25; }
 
-/* small menu - footer */
+/* footer */
 
 .moduletable_hmenu.smallFooter li {
-	font-size: 12px;
+	width: 150px;
+	position: absolute;
+	top: 0;
+	right: 16px;
+}
+
+.moduletable_hmenu.smallFooter li {
 	padding: 0 0 0 15px; 
 }
 .moduletable_hmenu.smallFooter a { 
@@ -208,7 +223,25 @@
 	font-weight: lighter; 
 }
 
-.moduletable_hmenu.smallFooter li.outline {top: 60px;}
-.moduletable_hmenu.smallFooter li.outline ~ li.outline { top: 80px; }
-.moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline { top: 100px; }
-.moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline ~ li.outline { top: 120px; }
+.moduletable_hmenu.smallFooter li.outline {top: 0px;}
+.moduletable_hmenu.smallFooter li.outline ~ li.outline { top: 20px; }
+.moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline { top: 40px; }
+.moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline ~ li.outline { top: 80px; }
+
+/* SLIDESHOW MENUS */
+/* footer */
+
+.moduletable_hmenu.slideshowFooter li {
+	font-size: 12px;
+	padding: 0 0 0 15px; 
+}
+
+.moduletable_hmenu.slideshowFooter a { 
+	color: #baa7a2;
+	font-weight: lighter; 
+}
+
+.moduletable_hmenu.slideshowFooter li { top: 60px; }
+.moduletable_hmenu.slideshowFooter li ~ li { top: 80px; }
+.moduletable_hmenu.slideshowFooter li ~ li ~ li { top: 100px; }
+.moduletable_hmenu.slideshowFooter li ~ li ~ li ~ li { top: 120px; }
