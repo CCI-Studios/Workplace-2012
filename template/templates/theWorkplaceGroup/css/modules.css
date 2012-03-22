@@ -31,6 +31,9 @@
 #sidebar .moduletable p {
 	margin: 5px 0 0 0; 
 }
+
+/* bottom modules */
+
 #bottom .moduletable:first-child {margin-left: 0;}
 #bottom .moduletable {
 	float: left;
@@ -47,9 +50,12 @@
 }
 
 #bottom .moduletable h3 {
+	background-image: none; /*cancels out default h3 style*/
+	padding: 0; /*cancels out default h3 style*/
+	line-height: 18px; /*cancels out default h3 style*/
 	font-size: 18px;
 	color: #a3b94f;
-	margin: 0 0 5px 0;
+	margin: 0 0 10px 0;
 }
 #bottom .moduletable p:first-child {margin: 0;}
 #bottom .moduletable p {
