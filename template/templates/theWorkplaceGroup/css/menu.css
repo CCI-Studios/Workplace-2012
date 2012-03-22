@@ -188,6 +188,8 @@
 .moduletable_hmenu.smallHeader {
 	background: url('../images/bg_headerMenu.png') left top no-repeat;
 	float: right;
+	position: relative;
+	left: 10px;
 	width: 353px;
 	padding: 0 0 9px 0px;
 	margin-bottom: 90px;
