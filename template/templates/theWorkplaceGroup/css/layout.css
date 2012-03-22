@@ -35,7 +35,7 @@ body {}
 
 #footer {
 	background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
-	padding: 20px 0;
+	padding: 20px 0 0 0;
 }
 
 .copyright {
