@@ -48,10 +48,10 @@ input {
 	margin: 5px 0 0 0; 
 }
 
-/* bottom modules */
+/* bottom and sidebar modules */
 
-#bottom .moduletable:first-child {margin-left: 0;}
-#bottom .moduletable {
+.moduletable.blockModule:first-child {margin-left: 0;}
+.moduletable.blockModule {
 	float: left;
 	position: relative;
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
