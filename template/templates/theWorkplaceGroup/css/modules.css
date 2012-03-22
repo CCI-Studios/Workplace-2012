@@ -17,6 +17,25 @@
 	top: 55px;
 }
 
+/* font resizer */
+
+.moduletable.fontResize {
+	position: absolute;
+	bottom: 48px;
+	right: 10px;
+}
+.moduletable.fontResize .smaller { font-size: 16px; }
+.moduletable.fontResize .bigger { font-size: 20px; }
+
+.moduletable.fontResize a {
+	color: #ffffff;
+	font-weight: 700;
+}
+.moduletable.fontResize a:hover {
+	text-decoration: none;
+	color: #a3b94f;
+}
+
 /* search bar */
 
 .moduletable.search div {
