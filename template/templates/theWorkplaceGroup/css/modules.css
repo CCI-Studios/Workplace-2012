@@ -9,6 +9,14 @@
 	left: 0px;
 }
 
+/* slogan */
+
+.moduletable.slogan {
+	position: absolute;
+	left: 277px;
+	top: 55px;
+}
+
 /* search bar */
 
 .moduletable.search div {
