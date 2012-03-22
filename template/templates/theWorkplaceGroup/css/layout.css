@@ -30,8 +30,8 @@ body {}
 	float: left;
 	width: 300px;
 	padding: 0 0 0 19px;
-	border-left: 1px solid #ebe9e8;
 }
+.home #sidebar { border-left: 1px solid #ebe9e8; }
 
 #footer {
 	background: #ffffff url('../images/bg_footerShadow.png') top center no-repeat;
