@@ -39,7 +39,8 @@ body {}
 }
 
 #footer > div {
-	background: url('../images/bg_footerSwirl.png') bottom right no-repeat;
+	background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
+	padding: 20px 0 0 0;
 }
 
 #footer > div > div { background: url('../images/bg_footerSwirl.png') bottom right no-repeat; }
