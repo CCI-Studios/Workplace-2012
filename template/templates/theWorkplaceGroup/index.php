@@ -58,6 +58,7 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 	<div id="header"><div><div class="container">
 		<jdoc:include type="modules" name="header" style="xhtml" />
+		<div class="clear"></div>
 	</div></div></div>
 	
 	<div id="nav"><div class="container">
@@ -89,6 +90,7 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 				<span class="left">&copy; <?php echo date('Y') ?> The WorkPlace Group. All Rights Reserved.</span>
 				<span class="right"><a href="http://ccistudios.com">Site by CCI Studios</a></span>
 		</div>
+		<div class="clear"></div>
 	</div></div>
 
 	<div class="hidden">
