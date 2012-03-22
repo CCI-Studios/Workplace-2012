@@ -66,9 +66,11 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	</div></div>
 	
 	<div id="body"><div class="container">
+		<?php if ($this->countModules('top')): ?>
 		<div id="top">
 			<jdoc:include type="modules" name="top" style="xhtml" />
 		</div>
+		<?php endif; ?>
 		<div id="content">
 			<jdoc:include type="component" />
 		</div>
@@ -76,14 +78,16 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 			<jdoc:include type="modules" name="sidebar" style="xhtml" />
 		</div>
 		<div class="clear"></div>
+		<?php if ($this->countModules('top')): ?>
 		<div id="bottom">
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
 			<div class="clear"></div>
 		</div>
+		<?php endif; ?>
 	</div></div>
 	<div class="clear"></div>
 
-	<div id="footer"><div class="container">
+	<div id="footer"><div><div class="container">
 		<jdoc:include type="modules" name="footer" style="xhtml" />
 		<div class="clear"></div>
 		<div class="copyright">
