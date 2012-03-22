@@ -21,6 +21,16 @@
 }
 
 .moduletable.search input {height: 30px;}
+
+/* sidebar */
+
+#sidebar .moduletable h4 {
+	margin: 0 0 5px 0;
+}
+#sidebar .moduletable p:first-child {margin: 0;}
+#sidebar .moduletable p {
+	margin: 5px 0 0 0; 
+}
 #bottom .moduletable:first-child {margin-left: 0;}
 #bottom .moduletable {
 	float: left;
