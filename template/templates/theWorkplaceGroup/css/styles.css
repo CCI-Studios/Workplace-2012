@@ -12,7 +12,7 @@
 ::-moz-selection{ background: #b4c574; color:#fff; text-shadow: none; }
 ::selection { background:#b4c574; color:#fff; text-shadow: none; }
 
-.button {
+#body .button {
 	background: url('../images/button.png') top left no-repeat;
 	display: inline-block;
 	*display: inline;
@@ -26,5 +26,5 @@
 	font-size: 16px;
 	text-shadow: 1px 1px 1px #43520e;
 }
-.button a { color: #ffffff; }
-.button a:hover {text-decoration: none;}
+#body .button a { color: #ffffff; }
+#body .button a:hover {text-decoration: none;}
