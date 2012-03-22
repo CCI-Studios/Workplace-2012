@@ -74,13 +74,19 @@ input {
 	color: #a3b94f;
 	margin: 0 0 10px 0;
 }
-#bottom .moduletable p:first-child {margin: 0;}
-#bottom .moduletable p {
+
+.moduletable.blockModule p:first-child {margin: 0;}
+.moduletable.blockModule p {
 	width: 57%;
-	margin: 5px 0 0 0; 
+	margin: 1em 0 0 0; 
 }
 
-#bottom .moduletable img {
+.moduletable.blockModule a {
+	font-weight: 600;
+	color: #3a261f;
+}
+
+.moduletable.blockModule img {
 	position: absolute;
 	bottom: 0;
 	right: 0;
