@@ -42,6 +42,8 @@ body {}
 	background: url('../images/bg_footerSwirl.png') bottom right no-repeat;
 }
 
+#footer > div > div { background: url('../images/bg_footerSwirl.png') bottom right no-repeat; }
+
 .copyright {
 	background: url('../images/bg_copyright.jpg') top center no-repeat;
 	font-size: 10px;
