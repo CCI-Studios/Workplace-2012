@@ -33,6 +33,8 @@ body {}
 }
 .home #sidebar { border-left: 1px solid #ebe9e8; }
 
+#bottom { padding: 25px 0 0 0; }
+
 #footer {
 	background: #ffffff url('../images/bg_footerShadow.png') top center no-repeat;
 	margin: 0 auto;
