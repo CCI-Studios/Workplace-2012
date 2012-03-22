@@ -91,7 +91,7 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 				<span class="right"><a href="http://ccistudios.com">Site by CCI Studios</a></span>
 		</div>
 		<div class="clear"></div>
-	</div></div>
+	</div></div></div>
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />
