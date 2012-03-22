@@ -26,11 +26,11 @@
 	line-height: 38px;
 	width: 98px;
 	text-align: center;
-}
-.button a {
+	border: none;
+	color: #ffffff;
 	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	color: #ffffff;
 	text-shadow: 1px 1px 1px #43520e;
 }
+.button a { color: #ffffff; }
 .button a:hover {text-decoration: none;}
