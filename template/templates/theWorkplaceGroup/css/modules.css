@@ -38,6 +38,18 @@ input {
 	font-size: 16px;
 }
 
+.moduletable.search button {
+	background: url('../images/bg_searchButton.png') top center no-repeat;
+	position: absolute;
+	width: 24px;
+	height: 18px;
+	right: 10px;
+	top: 12px;
+	text-indent: -9999px;
+	border: 0;
+}
+.moduletable.search button:hover { background: url('../images/bg_searchButtonRollover.png') top center no-repeat; }
+
 /* sidebar */
 
 #sidebar .moduletable:first-child { margin: 0;}
