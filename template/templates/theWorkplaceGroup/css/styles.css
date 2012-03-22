@@ -17,3 +17,20 @@
 	margin: 3px 0 0 0;
 	color: #a3b94f;
 }
+
+.button {
+	background: url('../images/button.png') top left no-repeat;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	line-height: 38px;
+	width: 98px;
+	text-align: center;
+}
+.button a {
+	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #43520e;
+}
+.button a:hover {text-decoration: none;}
