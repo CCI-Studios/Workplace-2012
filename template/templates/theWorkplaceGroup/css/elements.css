@@ -13,14 +13,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 1em 0;
 }
 
-h1 {
+h1, h3 {
 	font-size: 22px;
 	background: url('../images/bg_headers.png') top left no-repeat;
 	line-height: 38px;
 	padding: 0 0 0 42px;
 }
 
-h2, h3 { font-size: 16px; }
+h4 { font-size: 16px; }
 
 a, a:active, a:visited {
 	color: #a3b94f;
