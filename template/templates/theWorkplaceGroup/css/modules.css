@@ -9,6 +9,18 @@
 	left: 0px;
 }
 
+/* search bar */
+
+.moduletable.search {
+	position: absolute;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	bottom: 40px;
+	right: 180px;
+}
+
+.moduletable.search input {height: 30px;}
 #bottom .moduletable:first-child {margin-left: 0;}
 #bottom .moduletable {
 	float: left;
