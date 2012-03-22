@@ -62,11 +62,12 @@ input {
 	margin-left: 17px;
 	width: 260px;
 }
-#bottom .moduletable.spotlight {
+
+.moduletable.blockModule.spotlight {
 	background: url('../images/bg_bottomModuleSpotlight.jpg') bottom center no-repeat;
 }
 
-#bottom .moduletable h3 {
+.moduletable.blockModule h3 {
 	background-image: none; /*cancels out default h3 style*/
 	padding: 0; /*cancels out default h3 style*/
 	line-height: 18px; /*cancels out default h3 style*/
