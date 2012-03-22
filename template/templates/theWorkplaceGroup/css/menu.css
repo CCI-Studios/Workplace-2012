@@ -51,6 +51,7 @@
 	padding: 6px 0 0 0;
 	z-index: 2;
 }
+.moduletable_hmenu.primary .menu li.first div { left: -18px; }
 
 .moduletable_hmenu.primary .menu div ul {
 	background: url('../images/menu_dropdownBottom.png') bottom center no-repeat;
