@@ -230,6 +230,26 @@
 .moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline ~ li.outline { top: 80px; }
 
 /* SLIDESHOW MENUS */
+/* sidebar */
+
+.moduletable_hmenu.slideshowSidebar {
+	border-bottom: 1px solid #ebe9e8;
+}
+
+.moduletable_hmenu.slideshowSidebar li {
+	display: block;
+	background: url('../images/bg_slideshowSidebarMenu.png') top center no-repeat;
+	margin-bottom: 15px;
+	line-height: 75px;
+	padding: 0 15px;
+}
+.moduletable_hmenu.slideshowSidebar li a {
+	font-size: 20px;
+	font-weight: 100;
+	color: #fff;
+	text-shadow: 1px 1px 1px #43520e;
+}
+
 /* footer */
 
 .moduletable_hmenu.slideshowFooter li {
