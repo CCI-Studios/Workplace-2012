@@ -80,7 +80,7 @@ input {
 /* sidebar */
 
 #sidebar .moduletable:first-child { margin: 0;}
-#sidebar .moduletable { margin: 4em 0 0 0;}
+#sidebar .moduletable { margin: 1em 0 0 0;}
 
 #sidebar .moduletable h4 {
 	margin: 0;
