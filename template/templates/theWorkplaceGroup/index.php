@@ -24,7 +24,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 	$testing = false;
 }
 
-$analytics = "UA-XXXXX-X"; // FIXME Update to client ID
+$analytics = "UA-30297658-1";
 ?>
 
 <head>
