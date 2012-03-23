@@ -90,6 +90,28 @@ input {
 	margin: 0; 
 }
 
+.moduletable.slideshowSidebarMenu { border-bottom: 1px solid #ebe9e8; }
+
+.moduletable.slideshowSidebarMenu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.moduletable.slideshowSidebarMenu li {
+	display: block;
+	background: url('../images/bg_slideshowSidebarMenu.png') top center no-repeat;
+	margin-bottom: 15px;
+	line-height: 75px;
+	padding: 0 15px;
+}
+
+.moduletable.slideshowSidebarMenu li a {
+	font-size: 20px;
+	font-weight: 100;
+	color: #fff;
+	text-shadow: 1px 1px 1px #43520e;
+}
+
 /* bottom and sidebar modules */
 
 .moduletable.blockModule:first-child {margin-left: 0;}
