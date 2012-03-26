@@ -72,6 +72,7 @@
 
 .moduletable_hmenu.primary a,
 .moduletable_hmenu.primary span {
+	display: block;
 	color: #fff;
 	text-shadow: 1px 1px 1px #43520e;
 }
