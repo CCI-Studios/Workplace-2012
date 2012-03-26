@@ -12,6 +12,13 @@
 ::-moz-selection{ background: #b4c574; color:#fff; text-shadow: none; }
 ::selection { background:#b4c574; color:#fff; text-shadow: none; }
 
+ul.actions li {
+	position: absolute;
+	right: .5em;
+	top: 1em;
+	list-style: none;
+}
+
 #body .button {
 	background: url('../images/button.png') top left no-repeat;
 	display: inline-block;
