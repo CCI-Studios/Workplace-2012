@@ -72,6 +72,7 @@ $analytics = "UA-30297658-1";
 		</div>
 		<?php endif; ?>
 		<div id="content">
+			<jdoc:include type="message" />
 			<jdoc:include type="component" />
 		</div>
 		<div id="sidebar">
