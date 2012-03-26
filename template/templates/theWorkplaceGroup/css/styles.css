@@ -28,3 +28,5 @@
 }
 #body .button a { color: #ffffff; }
 #body .button a:hover {text-decoration: none;}
+.smaller {font-size: 11px;}
+.bigger {font-size: 15px;}
