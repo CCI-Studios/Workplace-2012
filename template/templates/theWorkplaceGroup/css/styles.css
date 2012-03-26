@@ -17,7 +17,7 @@
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	height: 38px;
+	line-height: 38px;
 	width: 98px;
 	text-align: center;
 	border: none;
@@ -28,6 +28,7 @@
 }
 #body .button a { color: #ffffff; }
 #body .button a:hover {text-decoration: none;}
+input.button { height: 38px; }
 
 .smaller {font-size: 11px;}
 .bigger {font-size: 15px;}
