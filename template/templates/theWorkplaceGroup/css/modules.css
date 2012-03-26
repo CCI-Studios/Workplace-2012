@@ -80,9 +80,10 @@ div.login > form {
 	border-radius: 7px;
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	position: relative;
+	padding: 10px 8px;
 }
 
-fieldset {border: none;}
+fieldset {border: none; padding: 0;}
 
 fieldset label {
 	display: block;
