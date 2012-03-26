@@ -12,6 +12,9 @@
 ::-moz-selection{ background: #b4c574; color:#fff; text-shadow: none; }
 ::selection { background:#b4c574; color:#fff; text-shadow: none; }
 
+.smaller {font-size: 11px;}
+.bigger {font-size: 15px;}
+
 ul.actions li {
 	position: absolute;
 	right: .5em;
@@ -36,6 +39,3 @@ ul.actions li {
 #body .button a { color: #ffffff; }
 #body .button a:hover {text-decoration: none;}
 input.button { height: 38px; }
-
-.smaller {font-size: 11px;}
-.bigger {font-size: 15px;}
