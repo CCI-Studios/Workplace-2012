@@ -48,20 +48,14 @@
 	right: 67px;
 }
 
-input {
-	border-radius: 10px;
-	height: 34px;
-	color: #baa7a2;
-	padding: 0px 10px;
-	border: 1px solid #2b1d18;
-}
+.moduletable.search input { height: 34px; }
 
 .moduletable.search input {
 	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
 	background: none;
 	height: 39px;
-	width: 216px;
-	padding: 0 45px 0 12px;
+	width: 214px;
+	padding: 0 43px 0 15px;
 	font-size: 16px;
 }
 
@@ -78,6 +72,36 @@ input {
 .moduletable.search button:hover { background: url('../images/bg_searchButtonRollover.png') top center no-repeat; }
 
 /* sidebar */
+
+/* login */
+ 
+fieldset {
+	border: 1px solid #ebe9e8;
+	border-radius: 7px;
+	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
+	position: relative;
+}
+
+fieldset label {
+	display: block;
+	line-height: 2em;
+}
+
+fieldset input.button,
+fieldset button.button { margin-top: 1em; }
+
+fieldset #form-login-remember {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+}
+fieldset #form-login-remember label { display: inline; }
+
+fieldset input { height: 2em; }
+fieldset input[type="text"],
+fieldset input[type="password"] { width: 255px; }
+
+/* end of login */
 
 #sidebar .moduletable:first-child { margin: 0;}
 #sidebar .moduletable { margin: 1em 0 0 0;}
