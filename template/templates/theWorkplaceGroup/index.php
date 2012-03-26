@@ -104,7 +104,7 @@ $analytics = "UA-30297658-1";
 
 	<!-- load scripts -->
 	<?php if ($testing): ?>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 		<script src="/templates/<?= $this->template ?>/js/fontSizer.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
