@@ -89,7 +89,7 @@ fieldset label {
 	line-height: 2em;
 }
 
-fieldset input.button,
+form input.button,
 fieldset button.button { margin-top: 1em; }
 
 fieldset #form-login-remember {
