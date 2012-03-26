@@ -75,12 +75,14 @@
 
 /* login */
  
-fieldset {
+div.login > form {
 	border: 1px solid #ebe9e8;
 	border-radius: 7px;
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	position: relative;
 }
+
+fieldset {border: none;}
 
 fieldset label {
 	display: block;
