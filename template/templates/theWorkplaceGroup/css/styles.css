@@ -34,7 +34,7 @@ ul.actions li {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	line-height: 38px;
+	height: 38px;
 	width: 98px;
 	text-align: center;
 	border: none;
