@@ -48,16 +48,18 @@
 	right: 67px;
 }
 
-.moduletable.search input { height: 34px; }
-
 .moduletable.search input {
 	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
 	background: none;
 	height: 39px;
+	line-height: 39px;
 	width: 214px;
 	padding: 0 43px 0 15px;
 	font-size: 16px;
 	border-radius: 10px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 
 .moduletable.search button {
