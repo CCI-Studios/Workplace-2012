@@ -64,10 +64,12 @@ td.list-title {
 	font-size: 20px;
 	line-height: 23px;
 	vertical-align: bottom;
-	display: inline;
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 
 td.list-date {
-	vertical-align: bottom;
-	display: inline;
+
 }
