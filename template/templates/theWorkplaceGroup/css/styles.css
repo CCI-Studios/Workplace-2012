@@ -39,3 +39,28 @@ ul.actions li {
 #body .button a { color: #ffffff; }
 #body .button a:hover {text-decoration: none;}
 input.button { height: 38px; }
+
+#finder-filter-select-list li { padding: .5em 0; }
+#finder-filter-select-list li select {
+	position: absolute;
+	left: 25%;
+	width: 200px;
+	color: #baa7a2;
+}
+
+table.category tr {
+	display: block;
+	margin-bottom: 1em;
+}
+
+td.list-title {
+	font-size: 20px;
+	line-height: 23px;
+	vertical-align: bottom;
+	display: inline;
+}
+
+td.list-date {
+	vertical-align: bottom;
+	display: inline;
+}
