@@ -99,9 +99,13 @@ fieldset #form-login-remember {
 	bottom: 1em;
 	right: 1em;
 }
-fieldset #form-login-remember label { display: inline; }
+fieldset #form-login-remember label { 
+	display: inline;
+	line-height: 1em;
+}
 
 fieldset input { height: 2em; }
+fieldset input[type="checkbox"] { height: 1em; }
 fieldset input[type="text"],
 fieldset input[type="password"] { width: 255px; }
 
