@@ -57,6 +57,7 @@
 	width: 214px;
 	padding: 0 43px 0 15px;
 	font-size: 16px;
+	border-radius: 10px;
 }
 
 .moduletable.search button {
