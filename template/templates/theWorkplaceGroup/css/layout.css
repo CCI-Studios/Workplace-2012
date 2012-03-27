@@ -29,7 +29,7 @@ body {}
 #sidebar {
 	font-size: 12px;
 	float: left;
-	width: 300px;
+	width: 299px;
 	padding: 0 0 0 19px;
 }
 .home #sidebar { border-left: 1px solid #ebe9e8; }
