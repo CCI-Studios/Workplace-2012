@@ -51,4 +51,9 @@ input {
 	border: 1px solid #2b1d18;
 }
 
+select {
+	color: #baa7a2;
+	border: 1px solid #2b1d18;
+}
+
 dt { margin-bottom: 1em;}
