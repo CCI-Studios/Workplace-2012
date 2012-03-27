@@ -184,6 +184,7 @@
 .moduletable_hmenu.smallFooter {
 	font-size: 14px;
 	font-weight: 700;
+	white-space: nowrap;
 }
 
 .moduletable_hmenu.smallHeader {
