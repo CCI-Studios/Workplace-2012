@@ -15,6 +15,13 @@
 .smaller {font-size: 11px;}
 .bigger {font-size: 15px;}
 
+.pretext p {
+	font-size: 22px;
+	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	margin: 0 0 .5em 0 !important;
+}
+
 ul.actions li {
 	position: absolute;
 	right: .5em;
