@@ -155,10 +155,11 @@ fieldset input[type="password"] { width: 255px; }
 	border: 1px solid #ebe9e8;
 	border-radius: 7px;
 	font-size: 12px;
-	padding: 12px 20px;
+	padding: 12px 18px;
 	margin-left: 17px;
-	width: 260px;
+	width: 27.6595745%;
 }
+#sidebar .moduletable.blockModule { width: 260px;}
 
 .moduletable.blockModule.spotlight {
 	background: url('../images/bg_bottomModuleSpotlight.jpg') bottom center no-repeat;
