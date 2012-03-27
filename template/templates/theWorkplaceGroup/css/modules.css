@@ -104,10 +104,15 @@ fieldset #form-login-remember label {
 	line-height: 1em;
 }
 
-fieldset input { height: 2em; }
-fieldset input[type="checkbox"] { height: 1em; }
+fieldset input { height: 2em; line-height: 2em; }
+fieldset input[type="checkbox"] { 
+	height: 1em;
+	border: none;
+}
 fieldset input[type="text"],
-fieldset input[type="password"] { width: 255px; }
+fieldset input[type="password"] { 
+	width: 255px; 
+}
 
 /* end of login */
 
