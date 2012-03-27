@@ -82,6 +82,7 @@ div.login > form {
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	position: relative;
 	padding: 10px 8px;
+	width: 281px;
 }
 
 fieldset {border: none; padding: 0;}
