@@ -29,7 +29,8 @@ ul.actions li {
 	list-style: none;
 }
 
-#body .button {
+#body .button,
+#body .validate  {
 	background: url('../images/button.png') top left no-repeat;
 	display: inline-block;
 	*display: inline;
