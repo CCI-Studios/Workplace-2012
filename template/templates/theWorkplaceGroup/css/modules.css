@@ -56,10 +56,14 @@
 	width: 214px;
 	padding: 0 43px 0 15px;
 	font-size: 16px;
-	border-radius: 10px;
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(/PIE.htc);
 }
 
 .moduletable.search button {
@@ -80,11 +84,14 @@
  
 div.login > form {
 	border: 1px solid #ebe9e8;
-	border-radius: 7px;
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	position: relative;
 	padding: 10px 8px;
 	width: 281px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	behavior: url(/PIE.htc);
 }
 
 fieldset {border: none; padding: 0;}
@@ -165,11 +172,15 @@ fieldset input[type="password"] {
 	position: relative;
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	border: 1px solid #ebe9e8;
-	border-radius: 7px;
 	font-size: 12px;
 	padding: 12px 18px;
 	margin-left: 17px;
 	width: 27.6595745%;
+	
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	behavior: url(/PIE.htc);
 }
 #sidebar .moduletable.blockModule { width: 260px;}
 
