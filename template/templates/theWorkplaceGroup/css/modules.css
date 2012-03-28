@@ -152,6 +152,7 @@ fieldset input[type="password"] {
 .moduletable.slideshowSidebarMenu li {
 	display: block;
 	background: url('../images/bg_slideshowSidebarMenu.png') top center no-repeat;
+	list-style: none;
 	margin-bottom: 15px;
 	line-height: 75px;
 	padding: 0 15px;
