@@ -63,7 +63,8 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	behavior: url(/PIE.htc);
+	behavior: url('templates/theWorkplaceGroup/resources/PIE.htc');
+	position: relative;
 }
 
 .moduletable.search button {
@@ -91,7 +92,7 @@ div.login > form {
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
-	behavior: url(/PIE.htc);
+	behavior: url('templates/theWorkplaceGroup/resources/PIE.htc');
 }
 
 fieldset {border: none; padding: 0;}
@@ -180,7 +181,8 @@ fieldset input[type="password"] {
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
-	behavior: url(/PIE.htc);
+	behavior: url('templates/theWorkplaceGroup/resources/PIE.htc');
+	
 }
 #sidebar .moduletable.blockModule { width: 260px;}
 
