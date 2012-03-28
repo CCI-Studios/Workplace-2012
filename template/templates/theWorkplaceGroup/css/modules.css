@@ -112,8 +112,9 @@ fieldset #form-login-remember label {
 	line-height: 1em;
 }
 
-form input.button,
-fieldset button.button { margin-top: 1em; }
+form input.button { margin-top: 1em; }
+
+fieldset button.button { margin-left: 0.5em;}
 
 fieldset input { 
 	height: 2em; 
