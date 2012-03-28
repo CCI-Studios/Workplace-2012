@@ -112,9 +112,10 @@ fieldset #form-login-remember label {
 	line-height: 1em;
 }
 
-form input.button { margin-top: 1em; }
+form input.button,
+fieldset button.button { margin-top: 1em; }
 
-fieldset button.button { margin-left: 0.5em;}
+.finder fieldset button.button { margin: 0 0 0 .5em;}
 
 fieldset input { 
 	height: 2em; 
@@ -127,9 +128,7 @@ fieldset input[type="checkbox"] {
 	background-color: #FFF;
 }
 fieldset input[type="text"],
-fieldset input[type="password"] { 
-	width: 255px; 
-}
+fieldset input[type="password"] {width: 255px;}
 
 /* end of login */
 
