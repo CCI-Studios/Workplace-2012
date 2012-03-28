@@ -39,7 +39,7 @@
 /* search bar */
 
 .moduletable.search div {
-	background: url('../images/bg_search.png') top center no-repeat;
+	background: url('../images/bg_search.png') top left no-repeat;
 	position: absolute;
 	display: inline-block;
 	*display: inline;
