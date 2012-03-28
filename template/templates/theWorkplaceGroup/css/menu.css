@@ -92,10 +92,11 @@
 
 .moduletable_hmenu.primary li.social {
 	position: absolute;
-	top: 5px;
 	right: 10px;
-	padding: 0 0 0 10px;
+	padding: 10px 0 0 10px;
+	line-height: 27px;
 }
+
 .moduletable_hmenu.primary li.social ~ li.social { right: 45px; }
 .moduletable_hmenu.primary li.social ~ li.social ~ li.social { right: 80px; }
 .moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social { right: 115px; }
