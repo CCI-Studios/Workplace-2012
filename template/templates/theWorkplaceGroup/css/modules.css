@@ -94,9 +94,6 @@ fieldset label {
 	line-height: 2em;
 }
 
-form input.button,
-fieldset button.button { margin-top: 1em; }
-
 fieldset #form-login-remember {
 	position: absolute;
 	bottom: 1em;
@@ -107,7 +104,14 @@ fieldset #form-login-remember label {
 	line-height: 1em;
 }
 
-fieldset input { height: 2em; line-height: 2em; }
+form input.button,
+fieldset button.button { margin-top: 1em; }
+
+fieldset input { 
+	height: 2em; 
+	line-height: 2em; 
+}
+
 fieldset input[type="checkbox"] { 
 	height: 1em;
 	border: none;
