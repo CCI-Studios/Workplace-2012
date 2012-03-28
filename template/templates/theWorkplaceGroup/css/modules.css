@@ -134,13 +134,9 @@ fieldset input[type="password"] {
 #sidebar .moduletable:first-child { margin: 0;}
 #sidebar .moduletable { margin: 1em 0 0 0;}
 
-#sidebar .moduletable h4 {
-	margin: 0;
-}
+#sidebar .moduletable h4 {margin: 0;}
 #sidebar .moduletable p:first-child {margin: 0;}
-#sidebar .moduletable p {
-	margin: 0; 
-}
+#sidebar .moduletable p {margin: 0;}
 
 .moduletable.slideshowSidebarMenu { border-bottom: 1px solid #ebe9e8; }
 
