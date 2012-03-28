@@ -121,9 +121,10 @@ fieldset input {
 	line-height: 2em; 
 }
 
-fieldset input[type="checkbox"] { 
+fieldset input[type="checkbox"] {
 	height: 1em;
 	border: none;
+	background-color: #FFF;
 }
 fieldset input[type="text"],
 fieldset input[type="password"] { 
