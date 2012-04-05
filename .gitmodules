@@ -1,3 +1,6 @@
 [submodule "plg_ie6"]
 	path = plg_ie6
 	url = git@github.com:CCI-Studios/IE6-compatability-notification-bar.git
+[submodule "com_slideshow"]
+	path = com_slideshow
+	url = git@github.com:CCI-Studios/com_slideshow.git
