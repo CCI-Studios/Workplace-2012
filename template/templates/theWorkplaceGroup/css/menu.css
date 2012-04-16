@@ -114,7 +114,7 @@
 .moduletable_hmenu.secondary .menu > li:first-child {padding: 0;}
 
 .moduletable_hmenu.secondary .menu > li {
-	padding: 0 0 0 13px;
+	padding: 0 0 0 12px;
 	color: #baa7a2;
 	vertical-align: top;
 }
@@ -155,7 +155,7 @@
 	width: 110px;
 	position: absolute;
 	top: 0;
-	right: 170px;
+	right: 175px;
 }
 
 /*IE8 EXCEPTION*/
@@ -218,9 +218,15 @@
 	margin: 20px 0 0 0;
 	padding: 0 10px;
 	border-left: 1px solid #422b25;
+	color: #422b25;
 }
 
-.moduletable_hmenu.smallHeader li a { color: #422b25; }
+.moduletable_hmenu.smallHeader li a {color: #422b25;}
+
+.moduletable_hmenu.smallHeader li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
 
 /* footer */
 
@@ -228,7 +234,7 @@
 	width: 150px;
 	position: absolute;
 	top: 0;
-	right: 8px;
+	right: 6px;
 	line-height: 12px;
 	padding: 0 0 0 15px; 
 }
@@ -258,5 +264,5 @@
 
 .moduletable_hmenu.slideshowFooter li { top: 60px; }
 .moduletable_hmenu.slideshowFooter li ~ li { top: 80px; }
-.moduletable_hmenu.slideshowFooter li ~ li ~ li { top: 100px; }
-.moduletable_hmenu.slideshowFooter li ~ li ~ li ~ li { top: 120px; }
+.moduletable_hmenu.slideshowFooter li ~ li ~ li { top: 110px; }/* FIXME MAY HAVE TO CHANGE - WEIRD POSITION BECAUSE LINK NAME IS LONG*/
+.moduletable_hmenu.slideshowFooter li ~ li ~ li ~ li { top: 130px; }
