@@ -46,6 +46,9 @@ ul.actions li {
 	text-shadow: 1px 1px 1px #43520e;
 	text-decoration: none;
 }
+#body .button:hover,
+#body .validate:hover {background: url('../images/button_over.png') top left no-repeat;}
+
 #body .button a { color: #ffffff; }
 #body .button a:hover {text-decoration: none;}
 input.button { height: 38px; }
