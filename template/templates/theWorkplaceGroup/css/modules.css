@@ -28,12 +28,12 @@
 .moduletable.fontResize .bigger { font-size: 20px; }
 
 .moduletable.fontResize a {
-	color: #ffffff;
+	color: #a3b94f;
 	font-weight: 700;
 }
 .moduletable.fontResize a:hover {
 	text-decoration: none;
-	color: #a3b94f;
+	color: #fff;
 }
 
 /* search bar */
