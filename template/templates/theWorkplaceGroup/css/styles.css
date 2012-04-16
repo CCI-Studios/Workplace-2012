@@ -44,6 +44,7 @@ ul.actions li {
 	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	text-shadow: 1px 1px 1px #43520e;
+	text-decoration: none;
 }
 #body .button a { color: #ffffff; }
 #body .button a:hover {text-decoration: none;}
