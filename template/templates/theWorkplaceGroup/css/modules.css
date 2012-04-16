@@ -156,12 +156,14 @@ fieldset input[type="password"] {width: 255px;}
 	white-space: nowrap;
 	cursor: pointer;
 }
+.moduletable.slideshowSidebarMenu li:hover {background: url('../images/bg_slideshowSidebarMenu_over.png') top center no-repeat;}
 
 .moduletable.slideshowSidebarMenu li a {
 	font-size: 20px;
 	font-weight: 100;
 	color: #fff;
 	text-shadow: 1px 1px 1px #43520e;
+	text-decoration: none;
 }
 
 /* bottom and sidebar modules */
