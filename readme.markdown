@@ -15,4 +15,3 @@ Make sure the follow are installed for Capistrano deployment:
 
 ## How to deploy
 1. 
-1. 
