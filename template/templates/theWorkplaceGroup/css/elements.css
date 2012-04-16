@@ -19,8 +19,18 @@ h1, h3 {
 	line-height: 38px;
 	padding: 0 0 0 50px;
 }
-
-h4 { font-size: 16px; }
+.item-page h3 {
+	font-size: 20px;
+	line-height: 20px;
+	padding: 0;
+	margin-bottom: 7px;
+	background: none;
+}
+	
+h4 { 
+	font-size: 16px;
+	margin-bottom: 10px;
+ }
 
 #sidebar p.date,
 #bottom p.date {
