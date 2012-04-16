@@ -36,6 +36,7 @@ ul.actions li {
 	*display: inline;
 	*zoom: 1;
 	height: 38px;
+	line-height: 38px;
 	width: 98px;
 	text-align: center;
 	border: none;
