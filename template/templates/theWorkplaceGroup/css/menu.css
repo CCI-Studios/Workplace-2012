@@ -37,6 +37,7 @@
 	padding: 0 20px 4px;
 	line-height: 50px;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 .moduletable_hmenu.primary .menu div {
