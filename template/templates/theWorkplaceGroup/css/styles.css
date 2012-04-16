@@ -57,13 +57,20 @@ input.button { height: 38px; }
 }
 
 table.category tr {
-	display: block;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 	margin-bottom: 1em;
+	float: left;
+	clear: both;
 }
 
 td.list-title {
 	font-size: 20px;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	float: left;
+}
+
+td.list-date {
+	float: left;
+	clear: left;
 }
