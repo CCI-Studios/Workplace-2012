@@ -154,6 +154,7 @@ fieldset input[type="password"] {width: 255px;}
 	line-height: 75px;
 	padding: 0 15px;
 	white-space: nowrap;
+	cursor: pointer;
 }
 
 .moduletable.slideshowSidebarMenu li a {
