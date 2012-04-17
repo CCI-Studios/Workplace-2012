@@ -5,7 +5,7 @@
 
 .moduletable.logo {
 	position: absolute;
-	top: 30px;
+	top: 25px;
 	left: 0px;
 }
 
@@ -14,14 +14,14 @@
 .moduletable.slogan {
 	position: absolute;
 	left: 277px;
-	top: 55px;
+	top: 50px;
 }
 
 /* font resizer */
 
 .moduletable.fontResize {
 	position: absolute;
-	bottom: 48px;
+	bottom: 34px;
 	right: 10px;
 }
 .moduletable.fontResize .smaller { font-size: 16px; }
@@ -44,8 +44,8 @@
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	bottom: 40px;
-	right: 67px;
+	bottom: 25px;
+	right: 69px;
 }
 
 .moduletable.search input {
