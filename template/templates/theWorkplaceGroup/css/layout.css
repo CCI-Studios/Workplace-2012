@@ -9,7 +9,7 @@ body {}
 	position: relative;
 }
 
-#header { background: url('../images/bg_headerSides.jpg') top center no-repeat; }
+#header { background: url('../images/bg_headerSides.png') top center repeat-x; }
 
 #header > div { background: url('../images/bg_header.jpg') top center no-repeat; }
 
