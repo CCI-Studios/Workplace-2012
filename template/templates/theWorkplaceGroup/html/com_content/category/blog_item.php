@@ -23,14 +23,14 @@ JHtml::core();
 <div class="system-unpublished">
 <?php endif; ?>
 <?php if ($params->get('show_title')) : ?>
-	<h1>
+	<h2>
 		<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
 			<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
 			<?php echo $this->escape($this->item->title); ?></a>
 		<?php else : ?>
 			<?php echo $this->escape($this->item->title); ?>
 		<?php endif; ?>
-	</h1>
+	</h2>
 <?php endif; ?>
 
 <?php if ($params->get('show_print_icon') || $params->get('show_email_icon') || $canEdit) : ?>
