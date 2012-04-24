@@ -30,13 +30,6 @@ h1, h3 {
 h4 { 
 	font-size: 16px;
 	margin-bottom: 10px;
- }
-
-#sidebar p.date,
-#bottom p.date {
-	font-size: 11px;
-	margin: 0 0 .5em 0;
-	color: #a3b94f;
 }
 
 a, a:active, a:visited {
