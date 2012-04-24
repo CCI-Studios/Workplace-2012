@@ -13,7 +13,11 @@ body {}
 
 #header > div { background: url('../images/bg_header.jpg') top center no-repeat; }
 
-#nav { background: #ffffff url('../images/bg_navRepeat.png') top center repeat-x; }
+#nav { 
+	background: #ffffff url('../images/bg_navRepeat.png') top center repeat-x;
+	position: relative;
+	z-index: 5;
+}
 
 #body {
 	background-color: #ffffff;
