@@ -225,6 +225,13 @@ fieldset input[type="password"] {width: 255px;}
 	color: #3A261F;
 }
 
+.moduletable.events ul li {
+	margin-top: 1em;
+}
+.moduletable.events ul li:first-child {
+	margin: 0;
+}
+
 .moduletable.events ul h4 a {
 	color: #3A261F;
 }
