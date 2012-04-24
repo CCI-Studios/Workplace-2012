@@ -137,7 +137,8 @@
 
 .moduletable_hmenu.secondary .menu > li > a,
 .moduletable_hmenu.secondary .menu > li > span,
-.moduletable_hmenu.smallFooter {
+.moduletable_hmenu.smallFooter .menu > li > a,
+.moduletable_hmenu.smallFooter .menu > li > span {
 	font-size: 14px;
 	font-weight: 600;
 	text-shadow: 1px 1px 1px #3a251f;
@@ -231,25 +232,28 @@
 }
 
 /* footer */
-
-.moduletable_hmenu.smallFooter li {
-	width: 150px;
+.moduletable_hmenu.smallFooter {
 	position: absolute;
 	top: 0;
-	right: 6px;
-	line-height: 12px;
-	padding: 0 0 0 15px; 
+	right: 10px;
+	width: 160px;
 }
+.ie7 .moduletable_hmenu.smallFooter {
+	top: 3px;
+	width: 155px;
+}
+
+.moduletable_hmenu.smallFooter li {
+	line-height: 12px;
+	padding: 0 0 8px;
+	display: block;
+}
+.ie7 .moduletable_hmenu.smallFooter li { padding: 0 0 8px; }
 
 .moduletable_hmenu.smallFooter a { 
 	color: #baa7a2;
 	font-weight: lighter; 
 }
-
-.moduletable_hmenu.smallFooter li.outline {top: 0px;}
-.moduletable_hmenu.smallFooter li.outline ~ li.outline { top: 20px; }
-.moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline { top: 40px; }
-.moduletable_hmenu.smallFooter li.outline ~ li.outline ~ li.outline ~ li.outline { top: 80px; }
 
 /* SLIDESHOW MENUS */
 /* footer */
