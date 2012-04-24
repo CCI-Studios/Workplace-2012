@@ -19,6 +19,15 @@ h1, h3 {
 	line-height: 38px;
 	padding: 0 0 0 50px;
 }
+
+.blog h2 {
+	margin: 0 0 .5em;
+}
+
+.blog p {
+	margin: .5em 0 1em;
+}
+
 .item-page h3 {
 	font-size: 20px;
 	line-height: 20px;
