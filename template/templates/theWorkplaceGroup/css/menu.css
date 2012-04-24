@@ -30,6 +30,8 @@
 .moduletable_hmenu.primary {
 	font-size: 20px;
 	font-weight: 400;
+	position: relative;
+	z-index: 5;
 }
 
 .moduletable_hmenu.primary .menu > li:first-child {padding: 0 20px 4px 0;}
