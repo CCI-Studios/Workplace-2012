@@ -216,3 +216,21 @@ fieldset input[type="password"] {width: 255px;}
 	right: 0;
 	overflow: visible;
 }
+
+/* events mod */
+
+.moduletable.events ul {
+	padding: 0;
+	list-style: none;
+	color: #3A261F;
+}
+
+.moduletable.events ul h4 a {
+	color: #3A261F;
+}
+
+.moduletable p.date {
+	font-size: 11px;
+	margin: 0 0 .5em 0;
+	color: #a3b94f;
+}
