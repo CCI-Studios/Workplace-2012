@@ -167,15 +167,13 @@ fieldset input[type="password"] {width: 255px;}
 }
 
 /* bottom and sidebar modules */
-
-.moduletable.blockModule:first-child {margin: 0;}
 .moduletable.blockModule {
 	float: left;
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	border: 1px solid #ebe9e8;
 	font-size: 12px;
 	padding: 12px 18px;
-	margin: 0 0 0 17px;
+	margin-left: 17px;
 	width: 27.6595745%;
 	
 	-webkit-border-radius: 7px;
@@ -185,6 +183,7 @@ fieldset input[type="password"] {width: 255px;}
 	position: relative;
 	*zoom: 1;
 }
+.moduletable.blockModule.first { margin-left: 0; }
 #sidebar .moduletable.blockModule { width: 260px;}
 
 .moduletable.blockModule.spotlight {
