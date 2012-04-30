@@ -4,7 +4,6 @@ window.addEvent('domready', function() {
 		plus = resizer.getElement('.bigger'),
 		content = $('content'),
 		current = parseInt(content.getStyle('font-size'), '0');
-		console.log(Cookie.read('font-size'));
 
 	if (Cookie.read('font-size')) {
 		var current = Cookie.read('font-size') || '13px';
