@@ -135,7 +135,6 @@ fieldset input[type="password"] {width: 255px;}
 #sidebar .moduletable:first-child { margin: 0;}
 #sidebar .moduletable { margin: 1em 0 0 0;}
 
-#sidebar .moduletable h4 {margin: 0;}
 #sidebar .moduletable p:first-child {margin: 0;}
 #sidebar .moduletable p {margin: 0;}
 
@@ -219,24 +218,28 @@ fieldset input[type="password"] {width: 255px;}
 
 /* events mod */
 
-.moduletable.events ul {
+.mod_calendar ul {
 	padding: 0;
 	list-style: none;
 	color: #3A261F;
 }
 
-.moduletable.events ul li {
+.mod_calendar ul li {
 	margin-top: 1em;
 }
-.moduletable.events ul li:first-child {
+.mod_calendar ul li:first-child {
 	margin: 0;
 }
 
-.moduletable.events ul h4 a {
+.mod_calendar .title a {
+	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
 	color: #3A261F;
 }
 
-.moduletable p.date {
+.moduletable .date {
 	font-size: 11px;
 	margin: 0 0 .5em 0;
 	color: #a3b94f;
