@@ -264,3 +264,12 @@
 .moduletable_hmenu.slideshowFooter li ~ li { top: 80px; }
 .moduletable_hmenu.slideshowFooter li ~ li ~ li { top: 110px; }/* FIXME MAY HAVE TO CHANGE - WEIRD POSITION BECAUSE LINK NAME IS LONG*/
 .moduletable_hmenu.slideshowFooter li ~ li ~ li ~ li { top: 130px; }
+
+/* sitemap menu */
+
+ul.sitemap li,
+ul.sitemap li.outline a{
+	font-size: 14px;
+	list-style: none;
+	color: #3A261F;
+}
