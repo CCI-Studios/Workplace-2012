@@ -176,10 +176,11 @@
 	width: 27px;
 	position: absolute;
 	top: 65px;
-	right: 140px;
+	right: 70px;
 }
 
 .moduletable_hmenu.secondary .menu > li.social ~ li.social { right: 105px; }
+.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social { right: 140px; }
 
 /* Mini Menu */
 /* header */
