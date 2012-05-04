@@ -94,7 +94,7 @@ $analytics = "UA-30297658-1";
 		<div class="clear"></div>
 		<div class="copyright">
 				<span class="left">&copy; <?php echo date('Y') ?> The WorkPlace Group. All Rights Reserved.</span>
-				<span class="right"><a href="http://ccistudios.com">Site by CCI Studios</a></span>
+				<span class="right">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
 		</div>
 		<div class="clear"></div>
 	</div></div></div>
