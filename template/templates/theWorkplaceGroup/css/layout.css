@@ -62,5 +62,5 @@ body {}
 	color: #baa7a2;
 	width: 100%;
 }
-.copyright a {float: right; color: #baa7a2;}
+.copyright a {color: #baa7a2;}
 .copyright a:hover { color: #a3b94f; text-decoration: none;}
