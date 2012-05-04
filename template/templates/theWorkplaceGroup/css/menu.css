@@ -95,9 +95,6 @@
 
 .moduletable_hmenu.primary li.social ~ li.social { right: 45px; }
 .moduletable_hmenu.primary li.social ~ li.social ~ li.social { right: 80px; }
-.moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social { right: 115px; }
-.moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social ~ li.social { right: 150px; }
-.moduletable_hmenu.primary li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social{ right: 185px; }
 .moduletable_hmenu.primary li.social:hover {background: none;}
 
 /* footer menus */
@@ -183,11 +180,6 @@
 }
 
 .moduletable_hmenu.secondary .menu > li.social ~ li.social { right: 105px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social { right: 70px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social { right: 35px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social { top: 100px; right: 140px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { right: 105px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social ~ li.social { right: 70px; }
 
 /* Mini Menu */
 /* header */
