@@ -58,9 +58,10 @@
 	height: 75px;
 }
 
-.mod_slideshow.fader .heading { margin: 0 0 -2em -8em; }
+.mod_slideshow.fader .heading { margin: 0 0 -2em -7em; }
 
 .mod_slideshow.fader ul {
 	list-style-image: url(../images/slideshow-bullet.png);
 	color: #3a261f;
+	padding-left: 30px;
 }
