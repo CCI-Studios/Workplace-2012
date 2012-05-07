@@ -185,7 +185,7 @@ fieldset input[type="password"] {width: 255px;}
 .moduletable.blockModule.first { margin-left: 0; }
 #sidebar .moduletable.blockModule { width: 260px;}
 
-.moduletable.blockModule.spotlight {
+.moduletable.blockModule:hover {
 	background: url('../images/bg_bottomModuleSpotlight.jpg') bottom center no-repeat;
 }
 
