@@ -194,8 +194,11 @@ fieldset input[type="password"] {width: 255px;}
 	padding: 0; /*cancels out default h3 style*/
 	line-height: 18px; /*cancels out default h3 style*/
 	font-size: 18px;
-	color: #a3b94f;
 	margin: 0 0 10px 0;
+}
+
+.moduletable.blockModule h3 a {
+	color: #a3b94f;
 }
 
 .moduletable.blockModule p:first-child {margin: 0;}
