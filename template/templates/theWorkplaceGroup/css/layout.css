@@ -48,17 +48,16 @@ body {}
 
 #footer > div {
 	background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
-	padding: 20px 0 0 0;
+	padding: 25px 0 0 0;
 }
 
-#footer > div > div { background: url('../images/bg_footerSwirl.png') bottom right no-repeat; }
+#footer > div > div {  }
 
 .copyright {
 	background: url('../images/bg_copyright.jpg') top center no-repeat;
 	font-size: 10px;
 	float: left;
-	padding: 15px 0;
-	margin: 25px 0 0 0; /*FIXME MAY HAVE TO REMOVE*/
+	padding: 25px 0;
 	color: #baa7a2;
 	width: 100%;
 }
