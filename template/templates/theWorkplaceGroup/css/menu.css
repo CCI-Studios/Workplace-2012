@@ -104,6 +104,8 @@
 	color: #baa7a2;
 	font-size: 11px;
 	line-height: 12px;
+	background: url('../images/bg_footerSwirl.png') bottom right no-repeat;
+	padding: 0 0 28px 0;
 }
 
 .moduletable_hmenu.secondary .menu li {
