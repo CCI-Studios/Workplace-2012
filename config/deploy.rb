@@ -92,42 +92,37 @@ namespace :deploy do
   namespace :nooku do
     task :setup do
       run <<-cmd
-        mkdir -p #{deploy_to}/shared &&
-        cd #{deploy_to}/shared &&
-        svn checkout -q #{nooku_url} nooku &&
-        ./symlinker #{deploy_to}/shared/nooku #{public}
-      cmd
-      
-      joomla17
-    end
-    
-    task :joomla17 do
-      run <<-cmd
-        mkdir -p #{public}/plugins/system/koowa &&
-        mv #{public}/plugins/system/koowa.php #{public}/plugins/system/koowa/koowa.php &&
-        mv #{public}/plugins/system/koowa.xml #{public}/plugins/system/koowa/koowa.xml
+        mkdir -p #{deploy_to}/shared;
+        cd #{deploy_to}/shared;
+        svn checkout -q #{nooku_url} nooku;
+        ./symlinker #{deploy_to}/shared/nooku #{public};
+
+        mkdir -p #{public}/plugins/system/koowa;
+        mv #{public}/plugins/system/koowa.php #{public}/plugins/system/koowa/koowa.php;
+        mv #{public}/plugins/system/koowa.xml #{public}/plugins/system/koowa/koowa.xml;
       cmd
     end
     
     task :update do
       run <<-cmd
-        cd #{deploy_to}/shared/nooku &&
-        svn update -q --force --accept 'theirs-full'
+        cd #{deploy_to}/shared/nooku;
+        svn update -q --force --accept 'theirs-full';
       cmd
     end
   end
 
   task :setup do
     transaction do
-      run "mkdir -p #{deploy_to}/releases"
-      run "mkdir -p #{deploy_to}/shared"
-      run "mkdir -p #{public}"
-      run "chmod 755 #{public}"
-
       run <<-CMD
-        cd #{deploy_to}/shared &&
-        curl -sLk #{symlinker_url} > symlinker &&
-        chmod +x symlinker
+        mkdir -p #{deploy_to}/releases;
+        mkdir -p #{deploy_to}/shared;
+        mkdir -p #{deploy_to}/shared/extension_uploads;
+        mkdir -p #{public};
+        chmod 755 #{public};
+
+        cd #{deploy_to}/shared;
+        curl -sLk #{symlinker_url} > symlinker;
+        chmod +x symlinker;
       CMD
       
       joomla::setup
@@ -140,15 +135,24 @@ namespace :deploy do
   
   task :finalize do
     run <<-CMD
-      cd #{latest_release} &&
-      git submodule init &&
-      git submodule update
+      cd #{latest_release};
+      git submodule init;
+      git submodule update;
     CMD
   end
 
   task :symlink_modules, :except => { :no_release => true } do
-    extensions.each do |path|
-      run "#{deploy_to}/shared/symlinker #{current_path}/#{path} #{public}"
+    extensions.each do |extension|
+      real_path = "#{release_path}/#{extension}/media/#{extension}"
+      up_path = "#{deploy_to}/shared/extension_uploads/#{extension}"
+
+      run <<-CMD
+        #{deploy_to}/shared/symlinker #{current_path}/#{extension} #{public};
+        if [ -d #{real_path} ]; then
+          mkdir -p #{up_path};
+          ln -nsf #{up_path} #{real_path}/uploads;
+        fi
+      CMD
     end
   end
 
@@ -159,3 +163,4 @@ end
 
 after "deploy:symlink", "deploy:symlink_modules"
 after "deploy:finalize_update", "deploy:finalize"
+after "deploy:finalize_update", "deploy:symlink_modules"
