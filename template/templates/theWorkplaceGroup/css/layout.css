@@ -57,7 +57,7 @@ body {}
 	background: url('../images/bg_copyright.jpg') top center no-repeat;
 	font-size: 10px;
 	float: left;
-	padding: 25px 0;
+	padding: 20px 0 10px;
 	color: #baa7a2;
 	width: 100%;
 }
