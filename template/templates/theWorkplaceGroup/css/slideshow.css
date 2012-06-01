@@ -7,6 +7,18 @@
 	border-radius: 10px;
 }
 
+.mod_slideshow.fader .slide {
+	background: #fff;
+	border-radius: 10px;
+	width: 100%;
+	height: 265px;
+	display: none;
+}
+
+.mod_slideshow.fader .slide.active {
+	display: block;
+}
+
 .mod_slideshow.fader .slide > div {
 	padding: 30px 240px 30px 365px;
 }
@@ -56,9 +68,8 @@
 	color: #fff;
 	text-shadow: -1px 1px 3px #43520e;
 
-	display: table-cell;
-	vertical-align: middle;
-	height: 75px;
+	padding-top: 12px;
+	height: 63px;
 }
 
 .mod_slideshow.fader .heading { margin: 0 0 -2em -7em; }
