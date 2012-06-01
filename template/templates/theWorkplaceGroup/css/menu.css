@@ -115,13 +115,13 @@
 .moduletable_hmenu.secondary .menu > li:first-child {padding: 0;}
 
 .moduletable_hmenu.secondary .menu > li {
-	padding: 0 0 0 12px;
+	padding: 0 0 0 24px;
 	color: #baa7a2;
 	vertical-align: top;
 }
 /*IE8 EXCEPTION*/
 .ie7 .moduletable_hmenu.secondary .menu > li,
-.ie8 .moduletable_hmenu.secondary .menu > li {padding: 0 0 0 5px;}
+.ie8 .moduletable_hmenu.secondary .menu > li {padding: 0 0 0 15px;}
 
 .moduletable_hmenu.secondary .menu ul {
 	width: 100%;
@@ -164,7 +164,7 @@
 .ie7 .moduletable_hmenu.secondary .menu > li.outline,
 .ie7 .moduletable_hmenu.slideshowFooter li,
 .ie8 .moduletable_hmenu.secondary .menu > li.outline,
-.ie8 .moduletable_hmenu.slideshowFooter li {right: 160px} 
+.ie8 .moduletable_hmenu.slideshowFooter li {right: 170px} 
 
 .moduletable_hmenu.secondary .menu > li.outline ~ li.outline { top: 20px; }
 .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline { top: 40px; }

@@ -29,6 +29,9 @@ body {}
 	float: left;
 	width: 620px;
 }
+.home #content {
+	margin-top: 20px;
+}
 
 #sidebar {
 	font-size: 12px;
@@ -36,7 +39,10 @@ body {}
 	width: 299px;
 	padding: 0 0 0 19px;
 }
-.home #sidebar { border-left: 1px solid #ebe9e8; }
+.home #sidebar {
+	margin-top: 20px;
+	border-left: 1px solid #ebe9e8;
+}
 
 #bottom { padding: 45px 0 0 0; }
 
@@ -57,7 +63,7 @@ body {}
 	background: url('../images/bg_copyright.jpg') top center no-repeat;
 	font-size: 10px;
 	float: left;
-	padding: 25px 0;
+	padding: 20px 0 10px;
 	color: #baa7a2;
 	width: 100%;
 }

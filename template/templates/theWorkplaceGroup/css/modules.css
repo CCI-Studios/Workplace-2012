@@ -196,14 +196,14 @@ fieldset input[type="password"] {width: 255px;}
 	font-size: 18px;
 	margin: 0 0 10px 0;
 }
-
+.moduletable.blockModule h3,
 .moduletable.blockModule h3 a {
 	color: #a3b94f;
 }
 
 .moduletable.blockModule p:first-child {margin: 0;}
 .moduletable.blockModule p {
-	width: 60%;
+	width: 58%;
 	margin: 1em 0 0 0; 
 }
 
@@ -217,6 +217,26 @@ fieldset input[type="password"] {width: 255px;}
 	bottom: 0;
 	right: 0;
 	overflow: visible;
+}
+
+.moduletable.blockModule.jobs .worker {
+	background: url('../images/bg_bottomModuleWorker1.jpg') bottom right no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 160px;
+	width: 124px;
+	overflow: visible;
+}
+
+.moduletable.blockModule.jobs ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.moduletable.blockModule.jobs li {
+	padding: 4px 0;
 }
 
 /* events mod */
