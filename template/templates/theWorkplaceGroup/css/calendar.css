@@ -1,0 +1,12 @@
+.jeventpage .cal_table,
+.jeventpage .cal_td_month, 
+.jeventpage .cal_td_currentmonth,
+.jeventpage .cal_td_daysnoevents,
+.jeventpage .cal_td_today,
+.jeventpage .cal_td_daysoutofmonth {
+	border-color: #3A261F;
+}
+
+.jeventpage .cal_daylink {
+	color: #A3B94F;
+}
