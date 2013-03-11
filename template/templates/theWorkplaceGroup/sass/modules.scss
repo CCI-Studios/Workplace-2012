@@ -23,61 +23,74 @@
 	position: absolute;
 	bottom: 34px;
 	right: 10px;
+
+	.smaller {
+		font-size: 16px;
+	}
+
+	.bigger {
+		font-size: 20px;
+	}
 }
-.moduletable.fontResize .smaller { font-size: 16px; }
-.moduletable.fontResize .bigger { font-size: 20px; }
 
 .moduletable.fontResize a {
 	color: #a3b94f;
 	font-weight: 700;
-}
-.moduletable.fontResize a:hover {
-	text-decoration: none;
-	color: #fff;
+
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
 }
 
 /* search bar */
 
-.moduletable.search div {
-	background: url('../images/bg_search.png') top left no-repeat;
-	position: absolute;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	bottom: 25px;
-	right: 69px;
-}
+.moduletable.search {
 
-.moduletable.search input {
-	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
-	background: none;
-	height: 39px;
-	line-height: 39px;
-	width: 216px;
-	padding: 0 43px 0 14px;
-	font-size: 16px;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	behavior: url('../templates/theWorkplaceGroup/resources/PIE.htc');
-	position: relative;
-}
+	div {
+		background: url('../images/bg_search.png') top left no-repeat;
+		position: absolute;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		bottom: 25px;
+		right: 69px;
+	}
 
-.moduletable.search button {
-	background: url('../images/bg_searchButton.png') top center no-repeat;
-	position: absolute;
-	width: 24px;
-	height: 18px;
-	right: 10px;
-	top: 12px;
-	text-indent: -9999px;
-	border: 0;
+	input {
+		font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+		background: none;
+		height: 39px;
+		line-height: 39px;
+		width: 216px;
+		padding: 0 43px 0 14px;
+		font-size: 16px;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		behavior: url('../templates/theWorkplaceGroup/resources/PIE.htc');
+		position: relative;
+	}
+
+	button {
+		background: url('../images/bg_searchButton.png') top center no-repeat;
+		position: absolute;
+		width: 24px;
+		height: 18px;
+		right: 10px;
+		top: 12px;
+		text-indent: -9999px;
+		border: 0;
+
+		&:hover {
+			background: url('../images/bg_searchButtonRollover.png') top center no-repeat;
+		}
+	}
 }
-.moduletable.search button:hover { background: url('../images/bg_searchButtonRollover.png') top center no-repeat; }
 
 /* sidebar */
 
@@ -95,74 +108,97 @@ div.login > form {
 	behavior: url('../templates/theWorkplaceGroup/resources/PIE.htc');
 }
 
-fieldset {border: none; padding: 0;}
+fieldset {
+	border: none; padding: 0;
 
-fieldset label {
-	display: block;
-	line-height: 2em;
-}
+	label {
+		display: block;
+		line-height: 2em;
+	}
+	
+	#form-login-remember {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
 
-fieldset #form-login-remember {
-	position: absolute;
-	bottom: 1em;
-	right: 1em;
-}
-fieldset #form-login-remember label { 
-	display: inline;
-	line-height: 1em;
+		label {
+			display: inline;
+			line-height: 1em;
+		}
+	}
+
+	input {
+		height: 2em; 
+		line-height: 2em;
+	}
+
+	input[type="checkbox"] {
+		height: 1em;
+		border: none;
+		background-color: #FFF;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 255px;
+	}
+
+	.finder & button.button {
+		margin: 0 0 0 .5em;
+	}
 }
 
 form input.button,
 fieldset button.button { margin-top: 1em; }
 
-.finder fieldset button.button { margin: 0 0 0 .5em;}
-
-fieldset input { 
-	height: 2em; 
-	line-height: 2em; 
-}
-
-fieldset input[type="checkbox"] {
-	height: 1em;
-	border: none;
-	background-color: #FFF;
-}
-fieldset input[type="text"],
-fieldset input[type="password"] {width: 255px;}
-
 /* end of login */
 
-#sidebar .moduletable:first-child { margin: 0;}
-#sidebar .moduletable { margin: 2em 0 0 0;}
+#sidebar .moduletable { 
+	margin: 2em 0 0 0;
 
-#sidebar .moduletable p:first-child {margin: 0;}
-#sidebar .moduletable p {margin: 0;}
+	&:first-child {
+		margin: 0;
+	}
 
-.moduletable.slideshowSidebarMenu { border-bottom: 1px solid #ebe9e8; }
+	p {
+		margin: 0;
 
-.moduletable.slideshowSidebarMenu ul {
-	margin: 0;
-	padding: 0;
+		&:first-child {
+			margin: 0;
+		}
+	}
 }
 
-.moduletable.slideshowSidebarMenu li {
-	display: block;
-	background: url('../images/bg_slideshowSidebarMenu.png') top center no-repeat;
-	list-style: none;
-	margin-bottom: 15px;
-	line-height: 75px;
-	padding: 0 15px;
-	white-space: nowrap;
-	cursor: pointer;
-}
-.moduletable.slideshowSidebarMenu li:hover {background: url('../images/bg_slideshowSidebarMenu_over.png') top center no-repeat;}
+.moduletable.slideshowSidebarMenu { 
+	border-bottom: 1px solid #ebe9e8; 
+	
+	ul {
+		margin: 0;
+		padding: 0;
+	}
 
-.moduletable.slideshowSidebarMenu li a {
-	font-size: 20px;
-	font-weight: 100;
-	color: #fff;
-	text-shadow: 1px 1px 1px #43520e;
-	text-decoration: none;
+	li {
+		display: block;
+		background: url('../images/bg_slideshowSidebarMenu.png') top center no-repeat;
+		list-style: none;
+		margin-bottom: 15px;
+		line-height: 75px;
+		padding: 0 15px;
+		white-space: nowrap;
+		cursor: pointer;
+
+		&:hover {
+			background: url('../images/bg_slideshowSidebarMenu_over.png') top center no-repeat;
+		}
+
+		a {
+			font-size: 20px;
+			font-weight: 100;
+			color: #fff;
+			text-shadow: 1px 1px 1px #43520e;
+			text-decoration: none;
+		}
+	}
 }
 
 /* bottom and sidebar modules */
@@ -181,89 +217,106 @@ fieldset input[type="password"] {width: 255px;}
 	behavior: url('../templates/theWorkplaceGroup/resources/PIE.htc');
 	position: relative;
 	*zoom: 1;
-}
-.moduletable.blockModule.first { margin-left: 0; }
-#sidebar .moduletable.blockModule { width: 260px;}
 
-.moduletable.blockModule:hover {
-	background: url('../images/bg_bottomModuleSpotlight.jpg') bottom center no-repeat;
-}
+	&.first {
+		margin-left: 0;
+	}
 
-.moduletable.blockModule h3 {
-	background-image: none; /*cancels out default h3 style*/
-	padding: 0; /*cancels out default h3 style*/
-	line-height: 18px; /*cancels out default h3 style*/
-	font-size: 18px;
-	margin: 0 0 10px 0;
-}
-.moduletable.blockModule h3,
-.moduletable.blockModule h3 a {
-	color: #a3b94f;
-}
+	#sidebar & {
+		width: 260px;
+	}
 
-.moduletable.blockModule p:first-child {margin: 0;}
-.moduletable.blockModule p {
-	width: 58%;
-	margin: 1em 0 0 0; 
-}
+	&:hover {
+		background: url('../images/bg_bottomModuleSpotlight.jpg') bottom center no-repeat;
+	}
 
-.moduletable.blockModule a {
-	font-weight: 600;
-	color: #3a261f;
-}
+	h3 {
+		background-image: none; /*cancels out default h3 style*/
+		padding: 0; /*cancels out default h3 style*/
+		line-height: 18px; /*cancels out default h3 style*/
+		font-size: 18px;
+		margin: 0 0 10px 0;
+		color: #a3b94f;
 
-.moduletable.blockModule img {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	overflow: visible;
-}
+		a {
+			color: #a3b94f;
+		}
+	}
 
-.moduletable.blockModule.jobs .worker {
-	background: url('../images/bg_bottomModuleWorker1.jpg') bottom right no-repeat;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	height: 160px;
-	width: 124px;
-	overflow: visible;
-}
+	p {
+		width: 58%;
+		margin: 1em 0 0 0;
 
-.moduletable.blockModule.jobs ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
+		&:first-child {
+			margin: 0;
+		}
+	}
 
-.moduletable.blockModule.jobs li {
-	padding: 4px 0;
+	a {
+		font-weight: 600;
+		color: #3a261f;
+	}
+
+	img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		overflow: visible;
+	}
+
+	&.jobs {
+
+		.worker {
+			background: url('../images/bg_bottomModuleWorker1.jpg') bottom right no-repeat;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 160px;
+			width: 124px;
+			overflow: visible;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		li {
+			padding: 4px 0;
+		}
+	}
 }
 
 /* events mod */
 
-.mod_calendar ul {
-	padding: 0;
-	list-style: none;
-	color: #3A261F;
-}
+.mod_calendar {
 
-.mod_calendar ul li {
-	margin-top: 1em;
-}
-.mod_calendar ul li:first-child {
-	margin: 0;
-}
+	ul {
+		padding: 0;
+		list-style: none;
+		color: #3A261F;
 
-.mod_calendar .title a {
-	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 700;
-	margin: 0;
-	color: #3A261F;
-}
+		li {
+			margin-top: 1em;
 
-.moduletable .date {
-	font-size: 11px;
-	margin: 0 0 .5em 0;
-	color: #a3b94f;
+			&:first-child {
+				margin: 0;
+			}
+		}
+	}
+
+	.title a {
+		font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		margin: 0;
+		color: #3A261F;
+	}
+
+	.date {
+		font-size: 11px;
+		margin: 0 0 .5em 0;
+		color: #a3b94f;
+	}
 }

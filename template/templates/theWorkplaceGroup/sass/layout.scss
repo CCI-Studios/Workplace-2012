@@ -9,9 +9,13 @@ body {}
 	position: relative;
 }
 
-#header { background: url('../images/bg_headerSides.png') top center repeat-x; }
+#header { 
+	background: url('../images/bg_headerSides.png') top center repeat-x; 
 
-#header > div { background: url('../images/bg_header.jpg') top center no-repeat; }
+	> div {
+		background: url('../images/bg_header.jpg') top center no-repeat;
+	}
+}
 
 #nav { 
 	background: #ffffff url('../images/bg_navRepeat.png') top center repeat-x;
@@ -28,9 +32,10 @@ body {}
 	position: relative;
 	float: left;
 	width: 620px;
-}
-.home #content {
-	margin-top: 20px;
+
+	.home & {
+		margin-top: 20px;
+	}
 }
 
 #sidebar {
@@ -38,10 +43,11 @@ body {}
 	float: left;
 	width: 299px;
 	padding: 0 0 0 19px;
-}
-.home #sidebar {
-	margin-top: 20px;
-	border-left: 1px solid #ebe9e8;
+
+	.home & {
+		margin-top: 20px;
+		border-left: 1px solid #ebe9e8;
+	}
 }
 
 #bottom { padding: 45px 0 0 0; }
@@ -50,14 +56,12 @@ body {}
 	background: #ffffff url('../images/bg_footerShadow.png') top center no-repeat;
 	margin: 0 auto;
 	padding-top: 4px;
-}
 
-#footer > div {
-	background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
-	padding: 25px 0 0 0;
+	> div {
+		background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
+		padding: 25px 0 0 0;		
+	}
 }
-
-#footer > div > div {  }
 
 .copyright {
 	background: url('../images/bg_copyright.jpg') top center no-repeat;
@@ -66,6 +70,13 @@ body {}
 	padding: 20px 0 10px;
 	color: #baa7a2;
 	width: 100%;
+
+	a {
+		color: #baa7a2;
+
+		&:hover {
+			color: #a3b94f; 
+			text-decoration: none;
+		}
+	}
 }
-.copyright a {color: #baa7a2;}
-.copyright a:hover { color: #a3b94f; text-decoration: none;}

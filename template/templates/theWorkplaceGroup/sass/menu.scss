@@ -1,272 +1,348 @@
 /* @group hmenu */
 /* combined menu styles */
-.moduletable_hmenu.primary,
-.moduletable_hmenu.smallHeader { font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif; }
 
-.moduletable_hmenu > ul {
-	margin: 0;
-	padding: 0;
+.moduletable_hmenu {
+
+	> ul {
+		margin: 0;
+		padding: 0;
+		
+		> li {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			position: relative;
+			
+			padding: 0 5px;
+		}
+	}
+
+	&.primary,
+	&.smallHeader {
+		font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
+	}
+
+	&.primary {
+		font-size: 20px;
+		font-weight: 400;
+		position: relative;
+		z-index: 5;
+
+		.menu {
+
+			> li {
+				padding: 0 20px 4px;
+				line-height: 50px;
+				vertical-align: middle;
+				cursor: pointer;
+
+				ul > li:hover {
+					background-color: #b4c574
+				}
+
+				&:first-child {
+					padding: 0 20px 4px 0;
+				}
+
+				&:hover {
+					background: url('../images/nav_rollover.png') center center no-repeat;
+					
+					div {
+						display: block;
+					}
+				}
+			}
+
+			li {
+
+				&.first div {
+					left: -18px;
+				}
+			}
+
+			div {
+				background: url('../images/menu_dropdownTop.png') top center no-repeat;
+				display: none;
+				position: absolute;
+				top: 49px;
+				left: 0px;
+				z-index: 2;
+				
+				font-size: 16px;
+				width: 224px;
+				padding: 6px 0 0 0;	
+
+				ul {
+					background: url('../images/menu_dropdownBottom.png') bottom center no-repeat;
+					position: relative;
+					left: 5px;
+					width: 214px;
+					margin: 0;
+					padding: 0 0 11px 0;
+					list-style: none;
+				}
+
+				li {
+					background-color: #bece83 ;
+					line-height: 22px;
+					padding: 0 13px;
+				}
+			}
+		}
+
+		li.social {
+			position: absolute;
+			right: 10px;
+			padding: 10px 0 0 10px;
+			line-height: 27px;
+
+			&:hover {
+				background: none;
+			}
+
+			~ li.social {
+				right: 45px;
+
+				~ li.social {
+					right: 80px;
+				}
+			}
+		}
+
+		a,
+		span {
+			display: block;
+			color: #fff;
+			text-shadow: 1px 1px 1px #43520e;
+		}
+
+		a:hover,
+		.menu span:hover {
+			text-decoration: none;
+		}
+	}
+
+	&.secondary {
+		color: #baa7a2;
+		font-size: 11px;
+		line-height: 12px;
+		background: url('../images/bg_footerSwirl.png') bottom right no-repeat;
+		padding: 0 0 28px 0;
+
+		.menu {
+
+			li {
+				list-style: none;
+
+				li {
+					font-size: 12px;
+					line-height: 20px;
+				}
+			}
+
+			> li {
+				padding: 0 0 0 24px;
+				color: #baa7a2;
+				vertical-align: top;
+
+				> a:hover {
+					text-decoration: none;
+				}
+
+				.ie7 &,
+				.ie8 & {
+					padding: 0 0 0 15px;
+				}
+				
+				&:first-child {
+					padding: 0;
+				}
+
+				&.outline ~ li.outline {
+					top: 20px;
+
+					~ li.outline {
+						top: 40px;
+
+						~ li.outline {
+							top: 60px;
+
+							~ li.outline {
+								top: 80px;
+
+								~ li.outline {
+									top: 100px;
+
+									~ li.outline {
+										top: 120px;
+
+										~ li.outline {
+											top: 140px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&.social {
+					width: 27px;
+					position: absolute;
+					top: 65px;
+					right: 70px;
+
+					~ li.social {
+						right: 105px;
+
+						~ li.social {
+							right: 140px;
+						}
+					}	
+				}
+			}
+
+			ul {
+				width: 100%;
+				margin: 5px 0;
+				padding: 0;
+			}
+
+			a,
+			li li a {
+				color: #baa7a2;
+				font-weight: 300;
+			}
+		}
+	}
+
+	&.secondary li > a:hover,
+	&.secondary li li a:hover,
+	&.slideshowFooter li a:hover,
+	&.smallFooter li a:hover { 
+		color: #a3b94f;
+		text-decoration: none;
+	}
+
+	&.secondary .menu > li > a,
+	&.secondary .menu > li > span,
+	&.smallFooter .menu > li > a,
+	&.smallFooter .menu > li > span {
+		font-size: 14px;
+		font-weight: 600;
+		text-shadow: 1px 1px 1px #3a251f;
+		position: relative;
+	}
+
+	&.secondary .menu > li.outline,
+	&.moduletable_hmenu.slideshowFooter li {
+		font-weight: 300;
+		width: 110px;
+		position: absolute;
+		top: 0;
+		right: 175px;
+	}
+
+	&.smallHeader,
+	&.smallFooter {
+		font-size: 14px;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+
+	&.smallHeader {
+		background: url('../images/bg_headerMenu.png') left top no-repeat;
+		float: right;
+		position: relative;
+		left: 10px;
+		width: auto;
+		padding: 0;
+		margin-bottom: 90px;
+
+		ul {
+			background: url('../images/bg_headerMenu.png') right -52px no-repeat;
+			padding: 0 30px 0px 0px;
+			margin: 0 0 0 40px;
+			height: 50px;		
+		}
+
+		li {
+			line-height: 14px;
+			margin: 20px 0 0 0;
+			padding: 0 10px;
+			border-left: 1px solid #422b25;
+			color: #422b25;
+			
+			&:first-child {
+				border: 0; padding: 0 10px 0 0;
+			}
+
+			a {
+				color: #422b25;
+
+				&:hover {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&.smallFooter {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 160px;
+
+		li {
+			line-height: 12px;
+			padding: 0 0 8px;
+			display: block;
+		}
+
+		a {
+			color: #baa7a2;
+			font-weight: lighter; 
+		}
+
+		.ie7 & {
+			top: 3px;
+			width: 155px;
+		}
+	}
+
+	&.slideshowFooter {
+
+		li {
+			font-size: 12px;
+			padding: 0 0 0 15px; 
+			top: 60px;
+
+			~ li {
+				top: 80px;
+
+				~ li {
+					top: 110px;
+
+					~ li {
+						top: 130px;
+					}
+				}
+			}
+		}
+
+		a {
+			color: #baa7a2;
+			font-weight: lighter; 
+		}
+	}
 }
 
-.moduletable_hmenu > ul > li {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	position: relative;
-	
-	padding: 0 5px;
-}
-
-.moduletable_hmenu.secondary li > a:hover,
-.moduletable_hmenu.secondary li li a:hover,
-.moduletable_hmenu.slideshowFooter li a:hover,
-.moduletable_hmenu.smallFooter li a:hover { 
-	color: #a3b94f;
-	text-decoration: none;
-}
-
-/* end of combined menu styles */
-
-.moduletable_hmenu.primary {
-	font-size: 20px;
-	font-weight: 400;
-	position: relative;
-	z-index: 5;
-}
-
-.moduletable_hmenu.primary .menu > li:first-child {padding: 0 20px 4px 0;}
-.moduletable_hmenu.primary .menu > li {
-	padding: 0 20px 4px;
-	line-height: 50px;
-	vertical-align: middle;
-	cursor: pointer;
-}
-
-.moduletable_hmenu.primary .menu div {
-	background: url('../images/menu_dropdownTop.png') top center no-repeat;
-	display: none;
-	position: absolute;
-	top: 49px;
-	left: 0px;
-	z-index: 2;
-	
-	font-size: 16px;
-	width: 224px;
-	padding: 6px 0 0 0;
-}
-.moduletable_hmenu.primary .menu li.first div { left: -18px; }
-
-.moduletable_hmenu.primary .menu div ul {
-	background: url('../images/menu_dropdownBottom.png') bottom center no-repeat;
-	position: relative;
-	left: 5px;
-	width: 214px;
-	margin: 0;
-	padding: 0 0 11px 0;
-	list-style: none;
-}
-.moduletable_hmenu.primary .menu div li {
-	background-color: #bece83 ;
-	line-height: 22px;
-	padding: 0 13px;
-}
-
-.moduletable_hmenu.primary .menu > li:hover div {display: block;}
-
-.moduletable_hmenu.primary a,
-.moduletable_hmenu.primary span {
-	display: block;
-	color: #fff;
-	text-shadow: 1px 1px 1px #43520e;
-}
-.moduletable_hmenu.primary .menu > li:hover {background: url('../images/nav_rollover.png') center center no-repeat;}
-
-.moduletable_hmenu.primary .menu > li ul > li:hover {background-color: #b4c574}
-
-.moduletable_hmenu.primary a:hover,
-.moduletable_hmenu.primary .menu span:hover {text-decoration: none;}
-
-.moduletable_hmenu.primary li.social {
-	position: absolute;
-	right: 10px;
-	padding: 10px 0 0 10px;
-	line-height: 27px;
-}
-
-.moduletable_hmenu.primary li.social ~ li.social { right: 45px; }
-.moduletable_hmenu.primary li.social ~ li.social ~ li.social { right: 80px; }
-.moduletable_hmenu.primary li.social:hover {background: none;}
-
-/* footer menus */
-/* secondary */
-
-.moduletable_hmenu.secondary {
-	color: #baa7a2;
-	font-size: 11px;
-	line-height: 12px;
-	background: url('../images/bg_footerSwirl.png') bottom right no-repeat;
-	padding: 0 0 28px 0;
-}
-
-.moduletable_hmenu.secondary .menu li {
-	list-style: none;
-}
-
-.moduletable_hmenu.secondary .menu > li:first-child {padding: 0;}
-
-.moduletable_hmenu.secondary .menu > li {
-	padding: 0 0 0 24px;
-	color: #baa7a2;
-	vertical-align: top;
-}
-/*IE8 EXCEPTION*/
-.ie7 .moduletable_hmenu.secondary .menu > li,
-.ie8 .moduletable_hmenu.secondary .menu > li {padding: 0 0 0 15px;}
-
-.moduletable_hmenu.secondary .menu ul {
-	width: 100%;
-	margin: 5px 0;
-	padding: 0;
-}
-
-.moduletable_hmenu.secondary li li {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.moduletable_hmenu.secondary .menu > li > a,
-.moduletable_hmenu.secondary .menu > li > span,
-.moduletable_hmenu.smallFooter .menu > li > a,
-.moduletable_hmenu.smallFooter .menu > li > span {
-	font-size: 14px;
-	font-weight: 600;
-	text-shadow: 1px 1px 1px #3a251f;
-	position: relative;
-}
-.moduletable_hmenu.secondary .menu > li > a:hover {text-decoration: none;}
-
-.moduletable_hmenu.secondary a,
-.moduletable_hmenu.secondary li li a {
-	color: #baa7a2;
-	font-weight: 300;
-}
-
-.moduletable_hmenu.secondary .menu > li.outline,
-.moduletable_hmenu.slideshowFooter li {
-	font-weight: 300;
-	width: 110px;
-	position: absolute;
-	top: 0;
-	right: 175px;
-}
-
-/*IE8 EXCEPTION*/
+/*IE EXCEPTIONS*/
 .ie7 .moduletable_hmenu.secondary .menu > li.outline,
 .ie7 .moduletable_hmenu.slideshowFooter li,
 .ie8 .moduletable_hmenu.secondary .menu > li.outline,
 .ie8 .moduletable_hmenu.slideshowFooter li {right: 170px} 
-
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline { top: 20px; }
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline { top: 40px; }
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline { top: 60px; }
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline { top: 80px; }
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline { top: 100px; }
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline { top: 120px; }
-.moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline { top: 140px; }
-
-.moduletable_hmenu.secondary .menu > li.social {
-	width: 27px;
-	position: absolute;
-	top: 65px;
-	right: 70px;
-}
-
-.moduletable_hmenu.secondary .menu > li.social ~ li.social { right: 105px; }
-.moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social { right: 140px; }
-
-/* Mini Menu */
-/* header */
-.moduletable_hmenu.smallHeader,
-.moduletable_hmenu.smallFooter {
-	font-size: 14px;
-	font-weight: 700;
-	white-space: nowrap;
-}
-
-.moduletable_hmenu.smallHeader {
-	background: url('../images/bg_headerMenu.png') left top no-repeat;
-	float: right;
-	position: relative;
-	left: 10px;
-	width: auto;
-	padding: 0;
-	margin-bottom: 90px;
-}
-
-.moduletable_hmenu.smallHeader ul {
-	background: url('../images/bg_headerMenu.png') right -52px no-repeat;
-	padding: 0 30px 0px 0px;
-	margin: 0 0 0 40px;
-	height: 50px;
-}
-
-.moduletable_hmenu.smallHeader li:first-child {border: 0; padding: 0 10px 0 0;}
-.moduletable_hmenu.smallHeader li {
-	line-height: 14px;
-	margin: 20px 0 0 0;
-	padding: 0 10px;
-	border-left: 1px solid #422b25;
-	color: #422b25;
-}
-
-.moduletable_hmenu.smallHeader li a {color: #422b25;}
-
-.moduletable_hmenu.smallHeader li a:hover {
-	text-decoration: none;
-	color: #fff;
-}
-
-/* footer */
-.moduletable_hmenu.smallFooter {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	width: 160px;
-}
-.ie7 .moduletable_hmenu.smallFooter {
-	top: 3px;
-	width: 155px;
-}
-
-.moduletable_hmenu.smallFooter li {
-	line-height: 12px;
-	padding: 0 0 8px;
-	display: block;
-}
-.ie7 .moduletable_hmenu.smallFooter li { padding: 0 0 8px; }
-
-.moduletable_hmenu.smallFooter a { 
-	color: #baa7a2;
-	font-weight: lighter; 
-}
-
-/* SLIDESHOW MENUS */
-/* footer */
-
-.moduletable_hmenu.slideshowFooter li {
-	font-size: 12px;
-	padding: 0 0 0 15px; 
-}
-
-.moduletable_hmenu.slideshowFooter a { 
-	color: #baa7a2;
-	font-weight: lighter; 
-}
-
-.moduletable_hmenu.slideshowFooter li { top: 60px; }
-.moduletable_hmenu.slideshowFooter li ~ li { top: 80px; }
-.moduletable_hmenu.slideshowFooter li ~ li ~ li { top: 110px; }/* FIXME MAY HAVE TO CHANGE - WEIRD POSITION BECAUSE LINK NAME IS LONG*/
-.moduletable_hmenu.slideshowFooter li ~ li ~ li ~ li { top: 130px; }
 
 /* sitemap menu */
 

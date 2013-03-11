@@ -21,17 +21,19 @@
 	font-weight: 700;
 	margin: 0 0 .5em 0 !important;
 }
-ul.actions {display: inline;}
+ul.actions {
+	display: inline;
 
-ul.actions li {
-	position: absolute;
-	right: .5em;
-	top: 1em;
-	list-style: none;
+	li {
+		position: absolute;
+		right: .5em;
+		top: 1em;
+		list-style: none;
+	}
 }
 
-#body .button,
-#body .validate  {
+.button,
+.validate  {
 	background: url('../images/button.png') top left no-repeat;
 	display: inline-block;
 	*display: inline;
@@ -46,12 +48,14 @@ ul.actions li {
 	font-size: 16px;
 	text-shadow: 1px 1px 1px #43520e;
 	text-decoration: none;
-}
-#body .button:hover,
-#body .validate:hover {background: url('../images/button_over.png') top left no-repeat;}
 
-#body .button a { color: #ffffff; }
-#body .button a:hover {text-decoration: none;}
+	&:hover {
+		background: url('../images/button_over.png') top left no-repeat;
+		color: #ffffff;
+		text-decoration: none;
+	}
+}
+
 input.button { height: 38px; }
 
 #finder-filter-select-list li { padding: .5em 0; }
