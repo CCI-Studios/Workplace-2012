@@ -1,0 +1,54 @@
+/*
+Grids should be setup using the following structure:
+
+div.container
+	div.fluid-row-12
+		div.span-3
+		div.span-6
+		div.span-3
+	div.fluid-row-16
+		div.span-6
+		div.span-10
+
+*/
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+@mixin grid($columns, $width, $gutter) {
+	.row-#{$columns} {
+		margin-left: -#{$gutter}px;
+		@include clearfix;
+
+		$column-width: $width/$columns - $gutter;
+
+		div[class*="span"] {
+			float: left;
+			margin-left: $gutter; 
+		}
+
+		@for $i from 1 through $columns {
+			.span-#{$i} { width: #{$column-width * $i + $gutter*($i - 1)}px; }
+		}
+	}
+}
+
+@mixin fluid-grid($columns, $gutter) {
+	.fluid-row-#{$columns} {
+		margin-left: -$gutter;
+		@include clearfix;
+
+		$row-gutter: $gutter/(100+$gutter)*100%;
+
+		div[class*="span"] {
+			float: left;
+			margin-left: $row-gutter; 
+		}
+
+		@for $i from 1 through $columns {
+			.span-#{$i} { width: 100%/12*$i - $row-gutter; }
+		}
+	}
+}

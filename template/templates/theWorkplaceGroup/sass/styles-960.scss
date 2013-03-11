@@ -1,0 +1,8 @@
+// for all styles > 960px
+.desktop-visible, .phone-hidden,
+.tablet-hidden, .mobile-hidden
+	{ display: block; }
+
+.phone-visible, .tablet-visible,
+.mobile-visible, .desktop-hidden
+	{ display: none; }

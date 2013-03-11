@@ -1,0 +1,8 @@
+// for all styles 320-478px
+.phone-visible, .mobile-visible,
+.tablet-hidden, .desktop-hidden
+	{ display: block; }
+
+.tablet-visible, .desktop-visible,
+.phone-hidden, .mobile-hidden 
+	{ display: none; }

@@ -1447,27 +1447,26 @@ td.list-date {
 .phone-hidden, .mobile-hidden {
   display: none; }
 
-@media only screen and (min-width: 480px) {
-  .tablet-visible, .mobile-visible,
-  .phone-hidden, .desktop-hidden {
-    display: block; }
+.tablet-visible, .mobile-visible,
+.phone-hidden, .desktop-hidden {
+  display: block; }
 
-  .phone-visible, .desktop-visible,
-  .tablet-hidden, .mobile-hidden {
-    display: none; } }
-@media only screen and (min-width: 760px) {
-  .tablet-visible, .mobile-visible,
-  .desktop-visible, .phone-hidden {
-    display: block; }
+.phone-visible, .desktop-visible,
+.tablet-hidden, .mobile-hidden {
+  display: none; }
 
-  .phone-visible, .tablet-hidden
-  .mobile-hidden, .desktop-hidden {
-    display: none; } }
-@media only screen and (min-width: 960px) {
-  .desktop-visible, .phone-hidden,
-  .tablet-hidden, .mobile-hidden {
-    display: block; }
+.tablet-visible, .mobile-visible,
+.desktop-visible, .phone-hidden {
+  display: block; }
 
-  .phone-visible, .tablet-visible,
-  .mobile-visible, .desktop-hidden {
-    display: none; } }
+.phone-visible, .tablet-hidden
+.mobile-hidden, .desktop-hidden {
+  display: none; }
+
+.desktop-visible, .phone-hidden,
+.tablet-hidden, .mobile-hidden {
+  display: block; }
+
+.phone-visible, .tablet-visible,
+.mobile-visible, .desktop-hidden {
+  display: none; }

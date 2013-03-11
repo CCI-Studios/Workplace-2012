@@ -1,0 +1,9 @@
+@include grid(12, 760, 20);
+@include grid(16, 760, 20);
+@include grid(24, 760, 20);
+
+@include fluid-grid(12, 2.5%);
+@include fluid-grid(16, 2.5%);
+@include fluid-grid(24, 2.5%);
+
+
