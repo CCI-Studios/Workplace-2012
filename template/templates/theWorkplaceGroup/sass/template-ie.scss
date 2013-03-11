@@ -22,9 +22,21 @@
 
 // @media queries
 // @import "grid-320";
+@import "layout-320";
+@import "modules-320";
+@import "menu-320";
 @import "styles-320";
+@import "layout-480";
+@import "modules-480";
+@import "menu-480";
 @import "styles-480";
 // @import "grid-760";
+@import "layout-760";
+@import "modules-760";
+@import "menu-760";
 @import "styles-760";
+@import "layout-960";
+@import "modules-960";
+@import "menu-960";
 @import "styles-960";
 // don't load 1100, assume std desktop

@@ -21,17 +21,26 @@
 @import "com_content";
 
 // @import "grid-320";
+@import "layout-320";
+@import "modules-320";
+@import "menu-320";
 @import "styles-320";
 @media only screen and (min-width:480px) {
+	@import "layout-480";
+	@import "modules-480";
+	@import "menu-480";
     @import "styles-480";
 }
 @media only screen and (min-width:760px) {
 	// @import "grid-760";
+	@import "layout-760";
+	@import "modules-760";
+	@import "menu-760";
     @import "styles-760";
 }
 @media only screen and (min-width:960px) {
+	@import "layout-960";
+	@import "modules-960";
+	@import "menu-960";
     @import "styles-960";
-}
-@media only screen and (min-width:1100px) {
-    // @import "1100-up";
 }
