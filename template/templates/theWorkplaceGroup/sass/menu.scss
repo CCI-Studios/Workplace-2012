@@ -191,6 +191,7 @@
 					position: absolute;
 					top: 65px;
 					right: 70px;
+					padding: 0;
 
 					~ li.social {
 						right: 105px;
@@ -252,11 +253,9 @@
 
 	&.smallHeader {
 		background: url('../images/bg_headerMenu.png') left top no-repeat;
-		float: right;
-		position: relative;
-		left: 10px;
-		width: auto;
-		padding: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
 		margin-bottom: 90px;
 
 		ul {
