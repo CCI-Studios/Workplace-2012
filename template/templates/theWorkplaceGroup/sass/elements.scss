@@ -6,6 +6,16 @@ body, select, input, textarea {
 	background-color: #38231e;
 }
 
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+	// FIXME: Change this to the right path
+	*behavior: url(/templates/sfh/resources/boxsizing.htc); // IE7 only
+}
+
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
 	font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
