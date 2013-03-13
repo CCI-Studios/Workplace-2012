@@ -17,7 +17,7 @@ CCI.Columns = new Class({
 		this.selector = selector;
 		this.columns = this.container.getElements(this.selector);
 		
-		this.offset = 32;
+		this.offset = 0;
 		this.height = 0;
 		
 		for (i = this.columns.length - 1; i >= 0; i--) {
