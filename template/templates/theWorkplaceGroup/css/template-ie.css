@@ -371,6 +371,13 @@ body, select, input, textarea {
   font-size: 13px;
   background-color: #38231e; }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/templates/sfh/resources/boxsizing.htc); }
+
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
   font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
@@ -400,6 +407,12 @@ h4 {
   font-size: 16px;
   margin-bottom: 10px; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+  .ie8 img {
+    width: auto; }
+
 a, a:active, a:visited {
   color: #a3b94f;
   text-decoration: none; }
@@ -421,6 +434,10 @@ input {
   color: #baa7a2;
   padding: 0px 10px;
   border: 1px solid #2b1d18; }
+  input:focus {
+    outline: none;
+    border-color: #a3b94f;
+    box-shadow: 0 0 3px #a3b94f; }
 
 select {
   color: #baa7a2;
@@ -487,40 +504,39 @@ div.container
 
 /* layout */
 .container {
-  width: 940px;
+  width: 95%;
+  padding: 0 2.5%;
   margin: 0 auto;
-  padding: 0 10px;
   position: relative; }
 
 #header {
   background: url("../images/bg_headerSides.png") top center repeat-x; }
   #header > div {
     background: url("../images/bg_header.jpg") top center no-repeat; }
+  #header .container {
+    min-height: 140px;
+    padding: 25px 0 10px;
+    text-align: center; }
 
 #nav {
   background: white url("../images/bg_navRepeat.png") top center repeat-x;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  min-height: 54px; }
 
 #body {
   background-color: #ffffff;
   padding: 25px 0; }
 
 #content {
-  position: relative;
-  float: left;
-  width: 620px; }
+  position: relative; }
   .home #content {
     margin-top: 20px; }
 
 #sidebar {
-  font-size: 12px;
-  float: left;
-  width: 299px;
-  padding: 0 0 0 19px; }
+  font-size: 12px; }
   .home #sidebar {
-    margin-top: 20px;
-    border-left: 1px solid #ebe9e8; }
+    margin-top: 20px; }
 
 #bottom {
   padding: 45px 0 0 0; }
@@ -547,27 +563,17 @@ div.container
       text-decoration: none; }
 
 /* @group modules */
-/* logo */
 .moduletable.logo {
-  position: absolute;
-  top: 25px;
-  left: 0px; }
+  margin-bottom: 10px; }
 
-/* slogan */
 .moduletable.slogan {
-  position: absolute;
-  left: 277px;
-  top: 50px; }
+  margin-bottom: 10px; }
 
 /* font resizer */
-.moduletable.fontResize {
-  position: absolute;
-  bottom: 34px;
-  right: 10px; }
-  .moduletable.fontResize .smaller {
-    font-size: 16px; }
-  .moduletable.fontResize .bigger {
-    font-size: 20px; }
+.moduletable.fontResize .smaller {
+  font-size: 16px; }
+.moduletable.fontResize .bigger {
+  font-size: 20px; }
 
 .moduletable.fontResize a {
   color: #a3b94f;
@@ -579,18 +585,15 @@ div.container
 /* search bar */
 .moduletable.search div {
   background: url("../images/bg_search.png") top left no-repeat;
-  position: absolute;
+  position: relative;
   display: inline-block;
   *display: inline;
-  *zoom: 1;
-  bottom: 25px;
-  right: 69px; }
+  *zoom: 1; }
 .moduletable.search input {
   font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
   background: none;
-  height: 39px;
-  line-height: 39px;
-  width: 216px;
+  height: 41px;
+  width: 275px;
   padding: 0 43px 0 14px;
   font-size: 16px;
   display: inline-block;
@@ -599,8 +602,7 @@ div.container
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  behavior: url("../templates/theWorkplaceGroup/resources/PIE.htc");
-  position: relative; }
+  behavior: url("../templates/theWorkplaceGroup/resources/PIE.htc"); }
 .moduletable.search button {
   background: url("../images/bg_searchButton.png") top center no-repeat;
   position: absolute;
@@ -691,13 +693,11 @@ fieldset button.button {
 
 /* bottom and sidebar modules */
 .moduletable.blockModule {
-  float: left;
   background: url("../images/bg_bottomModule.jpg") bottom center no-repeat;
   border: 1px solid #ebe9e8;
   font-size: 12px;
   padding: 12px 18px;
-  margin-left: 17px;
-  width: 27.6595745%;
+  margin-top: 20px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -705,9 +705,9 @@ fieldset button.button {
   position: relative;
   *zoom: 1; }
   .moduletable.blockModule.first {
-    margin-left: 0; }
+    margin: 0; }
   #sidebar .moduletable.blockModule {
-    width: 260px; }
+    width: 100%; }
   .moduletable.blockModule:hover {
     background: url("../images/bg_bottomModuleSpotlight.jpg") bottom center no-repeat; }
   .moduletable.blockModule h3 {
@@ -883,7 +883,8 @@ fieldset button.button {
       width: 27px;
       position: absolute;
       top: 65px;
-      right: 70px; }
+      right: 70px;
+      padding: 0; }
       .moduletable_hmenu.secondary .menu > li.social ~ li.social {
         right: 105px; }
         .moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social {
@@ -916,11 +917,9 @@ fieldset button.button {
   white-space: nowrap; }
 .moduletable_hmenu.smallHeader {
   background: url("../images/bg_headerMenu.png") left top no-repeat;
-  float: right;
-  position: relative;
-  left: 10px;
-  width: auto;
-  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-bottom: 90px; }
   .moduletable_hmenu.smallHeader ul {
     background: url("../images/bg_headerMenu.png") right -52px no-repeat;
@@ -1167,6 +1166,47 @@ td.list-date {
 .tablet-hidden, .mobile-hidden {
   display: none; }
 
+#header .container {
+  text-align: none; }
+
+#content {
+  width: 64.583333333%;
+  float: left;
+  padding-right: 20px; }
+
+#sidebar {
+  width: 33.125%;
+  float: left;
+  padding-left: 20px; }
+  .home #sidebar {
+    border-left: 1px solid #ebe9e8; }
+
+.moduletable.logo {
+  float: left;
+  width: 22.395833333%;
+  margin-bottom: 0; }
+
+.moduletable.slogan {
+  float: left;
+  width: 21.875%;
+  margin: 25px 0 0 5.20833%; }
+
+.moduletable.search {
+  float: right;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 49px 1.04167% 0 0; }
+
+.moduletable.fontResize {
+  float: right;
+  margin: 57px 1.5625% 0 0; }
+
+.moduletable.blockModule {
+  float: left;
+  margin: 0 0 0 1.80851%;
+  width: 32.127659575%; }
+
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {
   display: block; }
@@ -1174,6 +1214,10 @@ td.list-date {
 .phone-visible, .tablet-hidden
 .mobile-hidden, .desktop-hidden {
   display: none; }
+
+.container {
+  width: 960px;
+  padding: 0 10px; }
 
 .desktop-visible, .phone-hidden,
 .tablet-hidden, .mobile-hidden {
