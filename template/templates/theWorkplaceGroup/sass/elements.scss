@@ -51,6 +51,15 @@ h4 {
 	margin-bottom: 10px;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+
+	.ie8 & {
+		width: auto;
+	}
+}
+
 a, a:active, a:visited {
 	color: #a3b94f;
 	text-decoration: none;
