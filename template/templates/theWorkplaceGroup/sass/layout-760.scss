@@ -1,0 +1,21 @@
+#header {
+	.container {
+		text-align: none;
+	}
+}
+
+#content {
+	width: 64.583333333%; //620px
+	float: left;
+	padding-right: 20px;
+}
+
+#sidebar {
+	width: 33.125%; //318px
+	float: left;
+	padding-left: 20px;
+
+	.home & {
+		border-left: 1px solid #ebe9e8;
+	}
+}

@@ -3,17 +3,23 @@
 body {}
 
 .container {
-	width: 940px;
+	width: 95%;
+	padding: 0 2.5%;
 	margin: 0 auto;
-	padding: 0 10px;
 	position: relative;
 }
 
 #header { 
-	background: url('../images/bg_headerSides.png') top center repeat-x; 
+	background: url('../images/bg_headerSides.png') top center repeat-x;
 
 	> div {
 		background: url('../images/bg_header.jpg') top center no-repeat;
+	}
+
+	.container {
+		min-height: 140px;
+		padding: 25px 0 10px;
+		text-align: center;
 	}
 }
 
@@ -21,6 +27,7 @@ body {}
 	background: #ffffff url('../images/bg_navRepeat.png') top center repeat-x;
 	position: relative;
 	z-index: 5;
+	min-height: 54px; //REMOVE
 }
 
 #body {
@@ -30,8 +37,6 @@ body {}
 
 #content {
 	position: relative;
-	float: left;
-	width: 620px;
 
 	.home & {
 		margin-top: 20px;
@@ -40,13 +45,9 @@ body {}
 
 #sidebar {
 	font-size: 12px;
-	float: left;
-	width: 299px;
-	padding: 0 0 0 19px;
 
 	.home & {
 		margin-top: 20px;
-		border-left: 1px solid #ebe9e8;
 	}
 }
 
