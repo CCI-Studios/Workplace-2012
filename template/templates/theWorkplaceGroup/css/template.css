@@ -772,38 +772,31 @@ fieldset button.button {
 
 /* @group hmenu */
 /* combined menu styles */
-.moduletable_hmenu > ul {
-  margin: 0;
-  padding: 0; }
-  .moduletable_hmenu > ul > li {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    position: relative;
-    padding: 0 5px; }
-.moduletable_hmenu.primary, .moduletable_hmenu.smallHeader {
+.primary,
+.smallHeader {
   font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif; }
-.moduletable_hmenu.primary {
+
+.primary {
   font-size: 20px;
   font-weight: 400;
   position: relative;
   z-index: 5; }
-  .moduletable_hmenu.primary .menu > li {
+  .primary .menu > li {
     padding: 0 20px 4px;
     line-height: 50px;
     vertical-align: middle;
     cursor: pointer; }
-    .moduletable_hmenu.primary .menu > li ul > li:hover {
+    .primary .menu > li ul > li:hover {
       background-color: #b4c574; }
-    .moduletable_hmenu.primary .menu > li:first-child {
+    .primary .menu > li:first-child {
       padding: 0 20px 4px 0; }
-    .moduletable_hmenu.primary .menu > li:hover {
+    .primary .menu > li:hover {
       background: url("../images/nav_rollover.png") center center no-repeat; }
-      .moduletable_hmenu.primary .menu > li:hover div {
+      .primary .menu > li:hover div {
         display: block; }
-  .moduletable_hmenu.primary .menu li.first div {
+  .primary .menu li.first div {
     left: -18px; }
-  .moduletable_hmenu.primary .menu div {
+  .primary .menu div {
     background: url("../images/menu_dropdownTop.png") top center no-repeat;
     display: none;
     position: absolute;
@@ -813,7 +806,7 @@ fieldset button.button {
     font-size: 16px;
     width: 224px;
     padding: 6px 0 0 0; }
-    .moduletable_hmenu.primary .menu div ul {
+    .primary .menu div ul {
       background: url("../images/menu_dropdownBottom.png") bottom center no-repeat;
       position: relative;
       left: 5px;
@@ -821,82 +814,93 @@ fieldset button.button {
       margin: 0;
       padding: 0 0 11px 0;
       list-style: none; }
-    .moduletable_hmenu.primary .menu div li {
+    .primary .menu div li {
       background-color: #bece83;
       line-height: 22px;
       padding: 0 13px; }
-  .moduletable_hmenu.primary li.social {
+  .primary .menu li.social {
     position: absolute;
     right: 10px;
     padding: 10px 0 0 10px;
     line-height: 27px; }
-    .moduletable_hmenu.primary li.social:hover {
+    .primary .menu li.social:hover {
       background: none; }
-    .moduletable_hmenu.primary li.social ~ li.social {
+    .primary .menu li.social ~ li.social {
       right: 45px; }
-      .moduletable_hmenu.primary li.social ~ li.social ~ li.social {
+      .primary .menu li.social ~ li.social ~ li.social {
         right: 80px; }
-  .moduletable_hmenu.primary a,
-  .moduletable_hmenu.primary span {
+  .primary .menu a,
+  .primary .menu span {
     display: block;
     color: #fff;
     text-shadow: 1px 1px 1px #43520e; }
-  .moduletable_hmenu.primary a:hover,
-  .moduletable_hmenu.primary .menu span:hover {
+  .primary .menu a:hover,
+  .primary .menu .menu span:hover {
     text-decoration: none; }
-.moduletable_hmenu.secondary {
+
+.secondary {
   color: #baa7a2;
   font-size: 11px;
   line-height: 12px;
   background: url("../images/bg_footerSwirl.png") bottom right no-repeat;
   padding: 0 0 28px 0; }
-  .moduletable_hmenu.secondary .menu li {
+  .secondary .menu li {
     list-style: none; }
-    .moduletable_hmenu.secondary .menu li li {
+    .secondary .menu li li {
       font-size: 12px;
       line-height: 20px; }
-  .moduletable_hmenu.secondary .menu > li {
+  .secondary .menu > li {
     padding: 0 0 0 24px;
     color: #baa7a2;
     vertical-align: top; }
-    .moduletable_hmenu.secondary .menu > li > a:hover {
+    .secondary .menu > li > a:hover {
       text-decoration: none; }
-    .ie7 .moduletable_hmenu.secondary .menu > li, .ie8 .moduletable_hmenu.secondary .menu > li {
+    .ie7 .secondary .menu > li, .ie8 .secondary .menu > li {
       padding: 0 0 0 15px; }
-    .moduletable_hmenu.secondary .menu > li:first-child {
+    .secondary .menu > li:first-child {
       padding: 0; }
-    .moduletable_hmenu.secondary .menu > li.outline ~ li.outline {
+    .secondary .menu > li.outline ~ li.outline {
       top: 20px; }
-      .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline {
+      .secondary .menu > li.outline ~ li.outline ~ li.outline {
         top: 40px; }
-        .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline {
+        .secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline {
           top: 60px; }
-          .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
+          .secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
             top: 80px; }
-            .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
+            .secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
               top: 100px; }
-              .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
+              .secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
                 top: 120px; }
-                .moduletable_hmenu.secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
+                .secondary .menu > li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline ~ li.outline {
                   top: 140px; }
-    .moduletable_hmenu.secondary .menu > li.social {
+    .secondary .menu > li.social {
       width: 27px;
       position: absolute;
       top: 65px;
       right: 70px;
       padding: 0; }
-      .moduletable_hmenu.secondary .menu > li.social ~ li.social {
+      .secondary .menu > li.social ~ li.social {
         right: 105px; }
-        .moduletable_hmenu.secondary .menu > li.social ~ li.social ~ li.social {
+        .secondary .menu > li.social ~ li.social ~ li.social {
           right: 140px; }
-  .moduletable_hmenu.secondary .menu ul {
+  .secondary .menu ul {
     width: 100%;
     margin: 5px 0;
     padding: 0; }
-  .moduletable_hmenu.secondary .menu a,
-  .moduletable_hmenu.secondary .menu li li a {
+  .secondary .menu a,
+  .secondary .menu li li a {
     color: #baa7a2;
     font-weight: 300; }
+
+.moduletable_hmenu > ul {
+  margin: 0;
+  padding: 0; }
+  .moduletable_hmenu > ul > li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    padding: 0 5px; }
 .moduletable_hmenu.secondary li > a:hover, .moduletable_hmenu.secondary li li a:hover, .moduletable_hmenu.slideshowFooter li a:hover, .moduletable_hmenu.smallFooter li a:hover {
   color: #a3b94f;
   text-decoration: none; }
