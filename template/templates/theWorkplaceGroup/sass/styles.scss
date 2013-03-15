@@ -89,3 +89,15 @@ td.list-date {
 	float: left;
 	clear: left;
 }
+
+.btn-navbar {
+	@include btn-navbar;
+}
+
+.btn-navbar .icon-bar {
+	@include icon-bar;
+
+	& + .icon-bar {
+		margin-top: 3px;
+	}
+}
