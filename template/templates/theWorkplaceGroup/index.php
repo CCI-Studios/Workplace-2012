@@ -111,6 +111,7 @@ $analytics = "UA-30297658-1";
 		<script src="/templates/<?= $this->template ?>/js/fontSizer.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 	<?php else: ?>
 		<script>
