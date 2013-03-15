@@ -6,3 +6,11 @@
 .phone-visible, .tablet-visible,
 .mobile-visible, .desktop-hidden
 	{ display: none; }
+
+ul.actions li {
+	
+	&.print-icon,
+	&.edit-icon {
+		display: block;
+	}
+}

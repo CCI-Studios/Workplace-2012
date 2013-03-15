@@ -29,6 +29,11 @@ ul.actions {
 		right: .5em;
 		top: 1em;
 		list-style: none;
+
+		&.print-icon,
+		&.edit-icon {
+			display: none;
+		}
 	}
 }
 
