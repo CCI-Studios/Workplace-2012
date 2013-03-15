@@ -61,16 +61,16 @@ img {
 }
 
 a, a:active, a:visited {
-	color: #a3b94f;
+	color: $green;
 	text-decoration: none;
 }
 a:hover {
-	color: #a3b94f;
+	color: $green;
 	text-decoration: underline;
 }
 
 ul {
-	color: #a3b94f;
+	color: $green;
 	margin: 10px 0 20px;
 	padding: 0 0 0 20px;
 }
