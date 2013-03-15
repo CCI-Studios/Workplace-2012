@@ -30,6 +30,22 @@ body {}
 	min-height: 54px; //REMOVE
 }
 
+#mobile-menu {
+	max-height: 1000px;
+	margin: 0 -2.75%;
+	background-color: $green;
+	overflow: hidden;
+	@include transition(max-height .3s ease-in-out);
+	position: relative;
+	z-index: 1;
+
+	&.menu-close {
+		max-height: 0 !important;
+		position: relative;
+		z-index: -1;
+	}
+}
+
 #body {
 	background-color: #ffffff;
 	padding: 25px 0;
@@ -37,6 +53,7 @@ body {}
 
 #content {
 	position: relative;
+	margin-bottom: 2em;
 
 	.home & {
 		margin-top: 20px;
