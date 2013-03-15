@@ -1,0 +1,1 @@
+window.addEvent("domready",function(){var e=$$(".show-menu"),t=$$(".mobile")[0],n=$("mobile-menu"),r=function(){t.setStyle("max-height",t.getElement("ul").getSize().y)};r();window.addEvent("resize",function(){r()});e.addEvent("click",function(e){e=new Event(e);e.stop();n.toggleClass("menu-close")})});
