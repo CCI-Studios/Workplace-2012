@@ -64,6 +64,9 @@ $analytics = "UA-30297658-1";
 	
 	<div id="nav"><div class="container">
 		<jdoc:include type="modules" name="nav" style="xhtml" />
+		<div id="mobile-menu" class=" menu-close">
+			<jdoc:include type="modules" name="mobile-menu" style="xhtml" />		
+		</div>
 	</div></div>
 	
 	<div id="body"><div class="container">
