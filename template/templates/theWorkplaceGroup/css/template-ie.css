@@ -432,7 +432,6 @@ ul ul {
 input {
   border-radius: 2px;
   color: #baa7a2;
-  padding: 0px 10px;
   border: 1px solid #2b1d18; }
   input:focus {
     outline: none;
@@ -444,7 +443,10 @@ select {
   border: 1px solid #2b1d18; }
 
 dt {
-  margin-bottom: 1em; }
+  margin: 1em 0 0.333em; }
+
+dd {
+  margin: 0; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -504,7 +506,7 @@ div.container
 
 /* layout */
 .container {
-  width: 95%;
+  width: 100%;
   padding: 0 2.5%;
   margin: 0 auto;
   position: relative; }
@@ -515,7 +517,7 @@ div.container
     background: url("../images/bg_header.jpg") top center no-repeat; }
   #header .container {
     min-height: 140px;
-    padding: 25px 0 10px;
+    padding: 25px 2.5% 10px;
     text-align: center; }
 
 #nav {
@@ -524,12 +526,30 @@ div.container
   z-index: 5;
   min-height: 54px; }
 
+#mobile-menu {
+  max-height: 1000px;
+  margin: 0 -2.75%;
+  background-color: #a3b94f;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
+  -ms-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+  position: relative;
+  z-index: 1; }
+  #mobile-menu.menu-close {
+    max-height: 0 !important;
+    position: relative;
+    z-index: -1; }
+
 #body {
   background-color: #ffffff;
   padding: 25px 0; }
 
 #content {
-  position: relative; }
+  position: relative;
+  margin-bottom: 2em; }
   .home #content {
     margin-top: 20px; }
 
@@ -615,6 +635,12 @@ div.container
   .moduletable.search button:hover {
     background: url("../images/bg_searchButtonRollover.png") top center no-repeat; }
 
+.moduletable.show-menu {
+  line-height: 50px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
 /* sidebar */
 /* login */
 div.login > form {
@@ -622,7 +648,7 @@ div.login > form {
   background: url("../images/bg_bottomModule.jpg") bottom center no-repeat;
   position: relative;
   padding: 10px 8px;
-  width: 281px;
+  width: 100%;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -650,7 +676,8 @@ fieldset {
     background-color: #FFF; }
   fieldset input[type="text"],
   fieldset input[type="password"] {
-    width: 255px; }
+    width: 100%;
+    max-width: 255px; }
   .finder fieldset button.button {
     margin: 0 0 0 0.5em; }
 
@@ -772,71 +799,14 @@ fieldset button.button {
 
 /* @group hmenu */
 /* combined menu styles */
-.primary,
-.smallHeader {
-  font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif; }
-
-.primary {
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-  z-index: 5; }
-  .primary .menu > li {
-    padding: 0 20px 4px;
-    line-height: 50px;
-    vertical-align: middle;
-    cursor: pointer; }
-    .primary .menu > li ul > li:hover {
-      background-color: #b4c574; }
-    .primary .menu > li:first-child {
-      padding: 0 20px 4px 0; }
-    .primary .menu > li:hover {
-      background: url("../images/nav_rollover.png") center center no-repeat; }
-      .primary .menu > li:hover div {
-        display: block; }
-  .primary .menu li.first div {
-    left: -18px; }
-  .primary .menu div {
-    background: url("../images/menu_dropdownTop.png") top center no-repeat;
-    display: none;
-    position: absolute;
-    top: 49px;
-    left: 0px;
-    z-index: 2;
-    font-size: 16px;
-    width: 224px;
-    padding: 6px 0 0 0; }
-    .primary .menu div ul {
-      background: url("../images/menu_dropdownBottom.png") bottom center no-repeat;
-      position: relative;
-      left: 5px;
-      width: 214px;
-      margin: 0;
-      padding: 0 0 11px 0;
-      list-style: none; }
-    .primary .menu div li {
-      background-color: #bece83;
-      line-height: 22px;
-      padding: 0 13px; }
-  .primary .menu li.social {
-    position: absolute;
-    right: 10px;
-    padding: 10px 0 0 10px;
-    line-height: 27px; }
-    .primary .menu li.social:hover {
-      background: none; }
-    .primary .menu li.social ~ li.social {
-      right: 45px; }
-      .primary .menu li.social ~ li.social ~ li.social {
-        right: 80px; }
-  .primary .menu a,
-  .primary .menu span {
-    display: block;
-    color: #fff;
-    text-shadow: 1px 1px 1px #43520e; }
-  .primary .menu a:hover,
-  .primary .menu .menu span:hover {
-    text-decoration: none; }
+.primary a,
+.primary span {
+  display: block;
+  color: #fff;
+  text-shadow: 1px 1px 1px #43520e; }
+.primary a:hover,
+.primary .menu span:hover {
+  text-decoration: none; }
 
 .secondary {
   color: #baa7a2;
@@ -901,6 +871,61 @@ fieldset button.button {
     *zoom: 1;
     position: relative;
     padding: 0 5px; }
+.moduletable_hmenu.primary, .moduletable_hmenu.smallHeader {
+  font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif; }
+.moduletable_hmenu.primary {
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  z-index: 5; }
+  .moduletable_hmenu.primary .menu > li {
+    padding: 0 20px 4px;
+    line-height: 50px;
+    vertical-align: middle;
+    cursor: pointer; }
+    .moduletable_hmenu.primary .menu > li ul > li:hover {
+      background-color: #b4c574; }
+    .moduletable_hmenu.primary .menu > li:first-child {
+      padding: 0 20px 4px 0; }
+    .moduletable_hmenu.primary .menu > li:hover {
+      background: url("../images/nav_rollover.png") center center no-repeat; }
+      .moduletable_hmenu.primary .menu > li:hover div {
+        display: block; }
+  .moduletable_hmenu.primary .menu li.first div {
+    left: -18px; }
+  .moduletable_hmenu.primary .menu div {
+    background: url("../images/menu_dropdownTop.png") top center no-repeat;
+    display: none;
+    position: absolute;
+    top: 49px;
+    left: 0px;
+    z-index: 2;
+    font-size: 16px;
+    width: 224px;
+    padding: 6px 0 0 0; }
+    .moduletable_hmenu.primary .menu div ul {
+      background: url("../images/menu_dropdownBottom.png") bottom center no-repeat;
+      position: relative;
+      left: 5px;
+      width: 214px;
+      margin: 0;
+      padding: 0 0 11px 0;
+      list-style: none; }
+    .moduletable_hmenu.primary .menu div li {
+      background-color: #bece83;
+      line-height: 22px;
+      padding: 0 13px; }
+  .moduletable_hmenu.primary .menu li.social {
+    position: absolute;
+    right: 10px;
+    padding: 10px 0 0 10px;
+    line-height: 27px; }
+    .moduletable_hmenu.primary .menu li.social:hover {
+      background: none; }
+    .moduletable_hmenu.primary .menu li.social ~ li.social {
+      right: 45px; }
+      .moduletable_hmenu.primary .menu li.social ~ li.social ~ li.social {
+        right: 80px; }
 .moduletable_hmenu.secondary li > a:hover, .moduletable_hmenu.secondary li li a:hover, .moduletable_hmenu.slideshowFooter li a:hover, .moduletable_hmenu.smallFooter li a:hover {
   color: #a3b94f;
   text-decoration: none; }
@@ -973,6 +998,17 @@ fieldset button.button {
   color: #baa7a2;
   font-weight: lighter; }
 
+.moduletable_vmenu.mobile {
+  margin: 1em 0; }
+  .moduletable_vmenu.mobile .menu {
+    margin: 0;
+    padding: 0 3%; }
+    .moduletable_vmenu.mobile .menu > li,
+    .moduletable_vmenu.mobile .menu > span {
+      font-size: 28px; }
+    .moduletable_vmenu.mobile .menu li li {
+      font-size: 20px; }
+
 /*IE EXCEPTIONS*/
 .ie7 .moduletable_hmenu.secondary .menu > li.outline,
 .ie7 .moduletable_hmenu.slideshowFooter li,
@@ -1033,6 +1069,8 @@ ul.actions {
     right: .5em;
     top: 1em;
     list-style: none; }
+    ul.actions li.print-icon, ul.actions li.edit-icon {
+      display: none; }
 
 .button,
 .validate {
@@ -1045,7 +1083,7 @@ ul.actions {
   width: 98px;
   text-align: center;
   border: none;
-  color: #ffffff;
+  color: white !important;
   font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-shadow: 1px 1px 1px #43520e;
@@ -1083,6 +1121,43 @@ td.list-title {
 td.list-date {
   float: left;
   clear: left; }
+
+.btn-navbar {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 7px 10px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #8fa341;
+  box-shadow: inset 0 1px 0 #c0cf86;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em; }
+
+.btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin-top: 1px;
+  background-color: white;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+  .btn-navbar .icon-bar + .icon-bar {
+    margin-top: 3px; }
 
 .mod_slideshow {
   margin-top: 2em; }
@@ -1152,7 +1227,7 @@ td.list-date {
   border-color: #3A261F; }
 
 .jeventpage .cal_daylink {
-  color: #A3B94F; }
+  color: #a3b94f; }
 
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
@@ -1230,3 +1305,6 @@ td.list-date {
 .phone-visible, .tablet-visible,
 .mobile-visible, .desktop-hidden {
   display: none; }
+
+ul.actions li.print-icon, ul.actions li.edit-icon {
+  display: block; }
