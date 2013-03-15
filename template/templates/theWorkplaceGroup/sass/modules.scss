@@ -94,7 +94,7 @@ div.login > form {
 	background: url('../images/bg_bottomModule.jpg') bottom center no-repeat;
 	position: relative;
 	padding: 10px 8px;
-	width: 281px;
+	width: 100%;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
@@ -133,7 +133,8 @@ fieldset {
 
 	input[type="text"],
 	input[type="password"] {
-		width: 255px;
+		width: 100%;
+		max-width: 255px;
 	}
 
 	.finder & button.button {
@@ -227,10 +228,10 @@ fieldset button.button { margin-top: 1em; }
 		line-height: 18px; /*cancels out default h3 style*/
 		font-size: 18px;
 		margin: 0 0 10px 0;
-		color: #a3b94f;
+		color: $green;
 
 		a {
-			color: #a3b94f;
+			color: $green;
 		}
 	}
 
@@ -308,6 +309,6 @@ fieldset button.button { margin-top: 1em; }
 	.date {
 		font-size: 11px;
 		margin: 0 0 .5em 0;
-		color: #a3b94f;
+		color: $green;
 	}
 }
