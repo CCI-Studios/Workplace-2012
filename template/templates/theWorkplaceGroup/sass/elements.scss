@@ -80,13 +80,12 @@ ul ul {margin: 0}
 input {
 	border-radius: 2px;
 	color: #baa7a2;
-	padding: 0px 10px;
 	border: 1px solid #2b1d18;
 
 	&:focus {
 	    outline:none;
-	    border-color: #a3b94f;
-	    box-shadow:0 0 3px #a3b94f;
+	    border-color: $green;
+	    box-shadow:0 0 3px $green;
 	}
 }
 
