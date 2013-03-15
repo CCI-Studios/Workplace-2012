@@ -29,6 +29,7 @@
 	<positions>
 		<position>header</position>
 		<position>nav</position>
+		<position>mobile-menu</position>
 		<position>top</position>
 		<position>sidebar</position>
 		<position>bottom</position>
