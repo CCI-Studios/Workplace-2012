@@ -131,10 +131,12 @@
 	}
 
 	&.primary {
+		float: left;
 		font-size: 20px;
 		font-weight: 400;
 		position: relative;
 		z-index: 5;
+
 		.menu {
 			> li {
 				padding: 0 20px 4px;
@@ -142,7 +144,8 @@
 				vertical-align: middle;
 				cursor: pointer;
 				ul > li:hover {
-					background-color: #b4c574
+					background-color: #b4c574;
+					@include transition(background-color .2s ease-in);
 				}
 				&:first-child {
 					padding: 0 20px 4px 0;
@@ -233,10 +236,10 @@
 	&.secondary .menu > li.outline,
 	&.moduletable_hmenu.slideshowFooter li {
 		font-weight: 300;
-		width: 110px;
+		width: 130px;
 		position: absolute;
 		top: 0;
-		right: 175px;
+		right: 185px;
 	}
 
 	&.smallHeader,
@@ -335,15 +338,36 @@
 .moduletable_vmenu {
 
 	&.mobile {
-		margin: 1em 0;
 
 		.menu {
 			margin: 0;
-			padding: 0 3%;
+			padding: 0;
 
-			> li,
-			> span {
-				font-size: 28px;
+			> li {
+				font-size: 24px;
+				padding: 0;
+
+				> a, 
+				> span {
+					background-color: #b4c574;
+				}
+
+				div {
+					background-color: #bece83;
+				}
+			}
+
+			li {
+				list-style: none;
+
+				a,
+				span {
+					padding: 6px 5%;
+				}
+			}
+
+			ul {
+				padding: 0 0 0 5%;
 			}
 
 			li li {
