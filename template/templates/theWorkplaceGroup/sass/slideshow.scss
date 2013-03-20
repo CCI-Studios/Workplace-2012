@@ -20,66 +20,20 @@
 			}
 
 			> div {
-				padding: 30px 240px 30px 365px;
+				padding: 20px 5% 30px;
 			}
 
 			.image {
-				position: absolute;
-				bottom: 0;
-				left: 10px;	
+				display: none;
 			}
 		}
 
 		.thumb {
-			background: url(../images/slideshow-tab.png) left top no-repeat;
-			padding-left: 15px;
-
-			margin-left: 0;
-			-webkit-transition: margin-left 1s linear;
-			-moz-transition: margin-left 1s linear;
-			-o-transition: margin-left 1s linear;
-			-ms-transition: margin-left 1s linear;
-			transition: margin-left 1s linear;
-
-			&.active {
-				margin-left: -20px;
-
-				> div {
-					padding-right: 80px;
-				}
-			}
-
-			> div {
-				background: url(../images/slideshow-tab.png) right -81px no-repeat;
-				margin-right: -4px;
-				padding: 0 60px 0 5px;
-
-				-webkit-transition: padding-right 1s linear;
-				-moz-transition: padding-right 1s linear;
-				-o-transition: padding-right 1s linear;
-				-ms-transition: padding-right 1s linear;
-				transition: padding-right 1s linear;
-
-				> div {
-					display: table;
-					width: 100%;
-					padding-bottom: 6px;
-				}
-			}
-
-			.description {
-				font-size: 20px;
-				font-weight: 300;
-				color: #fff;
-				text-shadow: -1px 1px 3px #43520e;
-
-				padding-top: 12px;
-				height: 63px;
-			}
+			display: none;
 		}
 
 		.heading {
-			margin: 0 0 -2em -7em;
+			margin: 0 0 -1em 0em;
 		}
 
 		ul {

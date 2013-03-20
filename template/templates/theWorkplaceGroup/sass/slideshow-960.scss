@@ -1,0 +1,23 @@
+.mod_slideshow {
+
+	&.fader {
+		
+		.slide {
+
+			> div {
+				padding: 30px 240px 30px 365px;
+			}
+
+			.image {
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 10px;	
+			}
+		}
+
+		.heading {
+			margin: 0 0 -2em -7em;
+		}
+	}
+}
