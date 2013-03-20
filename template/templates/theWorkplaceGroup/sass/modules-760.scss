@@ -16,7 +16,15 @@
 	*display: inline;
 	*zoom: 1;
 
-	margin: 49px 1.041666667% 0 0; 
+	margin: 49px 1.041666667% 0 0;
+
+	div {
+		width: auto;
+	}
+
+	input {
+		width: 245px;
+	}
 }
 
 .moduletable.fontResize {
