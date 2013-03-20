@@ -25,15 +25,15 @@ body {}
 
 #nav { 
 	background: #ffffff url('../images/bg_navRepeat.png') top center repeat-x;
+	padding-bottom: 3px;
 	position: relative;
 	z-index: 5;
-	min-height: 54px; //REMOVE
 }
 
 #mobile-menu {
-	max-height: 1000px;
+	max-height: 1170px;
 	margin: 0 -2.75%;
-	background-color: $green;
+	background-color: #bece83;
 	overflow: hidden;
 	@include transition(max-height .3s ease-in-out);
 	position: relative;
