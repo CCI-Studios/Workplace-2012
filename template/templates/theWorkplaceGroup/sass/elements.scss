@@ -63,6 +63,7 @@ img {
 a, a:active, a:visited {
 	color: $green;
 	text-decoration: none;
+	@include transition(color .2s ease-in);
 }
 a:hover {
 	color: $green;
@@ -83,9 +84,10 @@ input {
 	border: 1px solid #2b1d18;
 
 	&:focus {
-	    outline:none;
-	    border-color: $green;
+	    outline: 0;
+	    border: 1px solid $green;
 	    box-shadow:0 0 3px $green;
+	    @include transition((box-shadow linear .2s, border .2s ease-in));
 	}
 }
 
