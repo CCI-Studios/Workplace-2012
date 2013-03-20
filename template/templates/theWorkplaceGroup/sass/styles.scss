@@ -92,12 +92,16 @@ td.list-date {
 
 .btn-navbar {
 	@include btn-navbar;
+
+	&:hover {
+		@include transition((background-color .2s ease-in, box-shadow .2s ease-in));
+	}
 }
 
 .btn-navbar .icon-bar {
 	@include icon-bar;
 
 	& + .icon-bar {
-		margin-top: 3px;
+		margin-top: 4px;
 	}
 }
