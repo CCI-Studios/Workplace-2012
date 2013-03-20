@@ -75,17 +75,19 @@ body {}
 	margin: 0 auto;
 	padding-top: 4px;
 
+	.container {
+		background: url("../images/bg_footerSwirl.png") right 20px no-repeat; 
+	}
+
 	> div {
 		background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
-		padding: 25px 0 0 0;		
 	}
 }
 
 .copyright {
-	background: url('../images/bg_copyright.jpg') top center no-repeat;
 	font-size: 10px;
 	float: left;
-	padding: 20px 0 10px;
+	padding: 10px 0 80px;
 	color: #baa7a2;
 	width: 100%;
 
