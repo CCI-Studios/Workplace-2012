@@ -36,7 +36,7 @@
 
 .moduletable.search {
 	div {
-		background: url('../images/bg_search.png') top left no-repeat;
+		width: 100%;
 		position: relative;
 		display: inline-block;
 		*display: inline;
@@ -45,9 +45,10 @@
 
 	input {
 		font-family: "myriad-pro-condensed", Helvetica, Arial, sans-serif;
-		background: none;
+		background: #544039;
+		background: rgba(255, 255, 255, .1);
 		height: 41px;
-		width: 275px;
+		width: 100%;
 		padding: 0 43px 0 14px;
 		font-size: 16px;
 		display: inline-block;
