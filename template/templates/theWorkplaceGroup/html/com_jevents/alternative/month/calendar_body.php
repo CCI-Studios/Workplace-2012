@@ -17,32 +17,32 @@ $precedingMonth = $this->datamodel->getPrecedingMonth($this->data);
 
 ?>
 
-<table width="100%" align="center" cellpadding="0" cellspacing="0" class="cal_table">
-    <tr valign="top" style="height:25px!important;line-height:25px;font-weight:bold;">
+<div class="cal_events cal_span7">
+    <div class="cal_header cal_span7">
     	<!-- <td width="2%" rowspan="2" /> -->
-        <td colspan="2" class="cal_td_month" style="text-align:center;">                
+        <div class="cal_td_month cal_span2" style="text-align:center;">                
            <?php echo "<a href='".$precedingMonth["link"]."' title='".$precedingMonth['name']."' style='text-decoration:none;'>".$precedingMonth['name']."</a>";?>
-        </td>
-        <td colspan="3" class="cal_td_currentmonth" style="text-align:center;"><?php echo $this->data['fieldsetText']; ?></td>
-        <td colspan="2" class="cal_td_month" style="text-align:center;">                
+        </div>
+        <div class="cal_td_currentmonth cal_span3" style="text-align:center;"><?php echo $this->data['fieldsetText']; ?></div>
+        <div class="cal_td_month cal_span2" style="text-align:center;">                
            <?php echo "<a href='".$followingMonth["link"]."' title='".$followingMonth['name']."' style='text-decoration:none;'>".$followingMonth['name']."</a>";?>
-        </td>
-    </tr>
-    <tr valign="top">
+        </div>
+    </div>
+    <div class="cal_span7 cal_daysofweek">
          <?php foreach ($this->data["daynames"] as $dayname) { ?>
-            <td width="14%" align="center" style="height:25px!important;line-height:25px;font-weight:bold;">
+            <div class="cal_span1" width="14%" align="center" style="height:25px!important;line-height:25px;font-weight:bold;">
                 <?php 
                 echo $dayname;?>
-            </td>
+            </div>
             <?php
         } ?>
-    </tr>            
+    </div>            
     <?php
     $datacount = count($this->data["dates"]);
     $dn=0;
     for ($w=0;$w<6 && $dn<$datacount;$w++){
     ?>           
-	<tr valign="top" style="height:80px;">				
+	<div class="cal_span7 cal_week">
         <?php
         // echo "<td width='2%' class='cal_td_weeklink'>";
         // list($week,$link) = each($this->data['weeks']);
@@ -54,16 +54,16 @@ $precedingMonth = $this->datamodel->getPrecedingMonth($this->data);
         		case "prior":
         		case "following":
         		?>
-            <td width="14%" class="cal_td_daysoutofmonth" valign="middle">
+            <div width="14%" class="cal_td_daysoutofmonth cal_span1 cal_day" valign="middle">
                 <?php echo JEVHelper::getMonthName($currentDay["month"]); ?>
-            </td>
+            </div>
             	<?php
             	break;
         		case "current":
-        			$cellclass = $currentDay["today"]?'class="cal_td_today"':'class="cal_td_daysnoevents"';
+        			$cellclass = $currentDay["today"]?'class="cal_td_today cal_span1 cal_day"':'class="cal_td_daysnoevents cal_span1 cal_day"';
         			// stating the height here is needed for konqueror and safari
 				?>
-            <td <?php echo $cellclass;?> width="14%" valign="top" style="height:80px;">
+            <div <?php echo $cellclass;?> width="14%" valign="top">
                 <?php $this->_datecellAddEvent($this->year, $this->month, $currentDay["d"]);?>
             	<!-- <a class="cal_daylink" href="<?php echo $currentDay["link"]; ?>" title="<?php echo JText::_('JEV_CLICK_TOSWITCH_DAY'); ?>"><?php echo $currentDay['d']; ?></a> -->
             	<span class="cal_daylink"><?php echo $currentDay['d']; ?></span>
@@ -72,7 +72,7 @@ $precedingMonth = $this->datamodel->getPrecedingMonth($this->data);
                 if (count($currentDay["events"])>0){
                 	foreach ($currentDay["events"] as $key=>$val){
 						if( $currentDay['countDisplay'] < $cfg->get('com_calMaxDisplay',5)) {
-                			echo '<div style="width:100%; border:0;padding:2px;">' . "\n";
+                			echo '<div style="border:0;padding:0px">' . "\n";
 						} else {
 							echo '<div style="float:left; border:0;padding:0px;">' . "\n";
 						}
@@ -82,12 +82,12 @@ $precedingMonth = $this->datamodel->getPrecedingMonth($this->data);
 						$currentDay['countDisplay']++;
                 	}
                 }
-                echo "</td>\n";
+                echo "</div>\n";
                 break;
         	}
         	$dn++;
         }
-        echo "</tr>\n";
+        echo "</div>\n";
     }
-    echo "</table>\n";
+    echo "</div>\n";
      $this->eventsLegend();

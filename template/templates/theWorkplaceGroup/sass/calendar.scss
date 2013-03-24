@@ -1,12 +1,88 @@
-.jeventpage .cal_table,
-.jeventpage .cal_td_month, 
-.jeventpage .cal_td_currentmonth,
-.jeventpage .cal_td_daysnoevents,
-.jeventpage .cal_td_today,
-.jeventpage .cal_td_daysoutofmonth {
-	border-color: #3A261F;
+// .cal_events .cal_tablecal_table,
+// .cal_events .cal_month, 
+// .cal_events .cal_currentmonth,
+// .cal_events .cal_daysnoevents,
+// .cal_events .cal_today,
+// .cal_events .cal_daysoutofmonth {
+// 	border: 1px solid #3A261F;
+// }
+
+.cal_events {
+	width: 100%;
+	background: #ffffff;
 }
 
-.jeventpage .cal_daylink {
-	color: $green;
+.cal_span7 {
+	float: left;
+	width: 100%;
+}
+
+.cal_span3 {
+	float: left;
+	width: 42.857142857%; //3/7
+}
+
+.cal_span2 {
+	float: left;
+	width: 28.571428571%; //2/7
+}
+
+.cal_span1 {
+	float: left;
+	width: 14.285714286%; //1/7
+}
+
+.cal_header {
+	line-height:25px;
+	font-weight:bold;
+	border: solid 1px $cal_border;
+}
+
+.cal_td_currentmonth {
+	border-left: solid 1px $cal_border;
+	border-right: solid 1px $cal_border;
+	background-color: rgb(153,221,255);
+}
+
+.cal_daysofweek {
+	font-size: 60%;
+	border: solid 1px $cal_border;
+	border-top: 0;
+}
+
+.cal_td_daysoutofmonth {
+	font-size: 60%;
+}
+
+.cal_week {
+	border-bottom: solid 1px $cal_border;
+	border-right: solid 1px $cal_border;
+}
+
+.cal_day {
+	height: 44px;
+	border: 0;
+	border-left: solid 1px $cal_border;
+	overflow: hidden;
+}
+
+.cal_daylink {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.cal_linkOutterWrapper {
+	float: left;
+	margin: 2px;
+	border-left-width: 16px !important;
+	height: 16px;
+}
+
+a.cal_titlelink {
+	display: block;
+	text-indent: -9999px;
+	width: 16px;
+	height: 16px;
+	margin-left: -16px;
 }

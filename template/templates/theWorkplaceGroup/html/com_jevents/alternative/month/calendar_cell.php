@@ -36,8 +36,8 @@ class EventCalendarCell_alternative extends EventCalendarCell_default
 		// overlay window information printed with a javascript mouseover event.  Each event prints as a separate table
 		// row with a single column, within the month table's cell.
 		// define start and end
-		$cellStart = '<div';
-		$cellStyle = 'padding:0;';
+		$cellStart = '<div class="cal_linkOutterWrapper"';
+		$cellStyle = '';
 		$cellEnd = '</div>' . "\n";
 
 		$linkStyle = "";
@@ -100,7 +100,7 @@ class EventCalendarCell_alternative extends EventCalendarCell_default
 					$title_event_link = "\n" . '<a class="cal_titlelink" href="' . $link . '" ' . $linkStyle . '>'
 							. ( $cfg->get('com_calDisplayStarttime') ? $tmp_start_time : '' ) . ' ' . $tmpTitle . '</a>' . "\n";
 				}
-				$cellStyle .= "border-left:8px solid " . $this->event->bgcolor() . ";padding-left:2px;";
+				$cellStyle .= "border-left:8px solid " . $this->event->bgcolor() . "";
 			}
 		}
 		else
