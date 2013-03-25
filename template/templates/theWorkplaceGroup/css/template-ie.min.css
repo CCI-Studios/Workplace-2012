@@ -376,7 +376,7 @@ body, select, input, textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/templates/sfh/resources/boxsizing.htc); }
+  *behavior: url(/templates/theWorkplaceGroup/resources/boxsizing.htc); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -641,7 +641,9 @@ div.container
   border-radius: 10px;
   behavior: url("../templates/theWorkplaceGroup/resources/PIE.htc"); }
   .ie7 .moduletable.search input, .ie8 .moduletable.search input {
-    line-height: 41px; }
+    line-height: 41px;
+    position: relative;
+    z-index: 1; }
 .moduletable.search button {
   background: url("../images/bg_searchButton.png") top center no-repeat;
   position: absolute;
@@ -663,12 +665,18 @@ div.container
 .moduletable.social-links-nav {
   float: right;
   padding: 10px 0 8px; }
+  .ie8 .moduletable.social-links-nav img {
+    width: 28px;
+    min-width: 28px; }
 
 .moduletable.social-links-footer {
   position: absolute;
   padding: 10px 0;
   right: 73px;
   top: 50px; }
+  .ie8 .moduletable.social-links-footer img {
+    width: 28px;
+    min-width: 28px; }
 
 /* sidebar */
 /* login */
@@ -1061,7 +1069,7 @@ fieldset button.button {
 .ie7 .moduletable_hmenu.slideshowFooter li,
 .ie8 .moduletable_hmenu.secondary .menu > li.outline,
 .ie8 .moduletable_hmenu.slideshowFooter li {
-  right: 170px; }
+  right: 180px; }
 
 /* sitemap menu */
 ul.sitemap li,
@@ -1442,8 +1450,11 @@ a.cal_titlelink {
   width: auto;
   margin-left: 0px; }
 
+#wrapper {
+  min-width: 960px; }
+
 .container {
-  max-width: 960px;
+  width: 960px;
   padding: 0 10px; }
   #header .container {
     padding: 25px 10px 10px; }
