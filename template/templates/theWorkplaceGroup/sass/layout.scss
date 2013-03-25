@@ -39,6 +39,9 @@ body {}
 	@include transition(max-height .3s ease-in-out);
 	position: relative;
 	z-index: 1;
+	//for ie9
+	width: 105.5%;
+	*zoom: 1;
 
 	&.menu-close {
 		max-height: 0 !important;
