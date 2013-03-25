@@ -66,51 +66,52 @@ $analytics = "UA-30297658-1";
 </head>
 
 <body class="<?= $menu ?>">
-
-	<div id="header"><div><div class="container">
-		<jdoc:include type="modules" name="header" style="xhtml" />
-		<div class="clear"></div>
-	</div></div></div>
-	
-	<div id="nav"><div class="container">
-		<jdoc:include type="modules" name="nav" style="xhtml" />
-		<div id="mobile-menu" class=" menu-close">
-			<jdoc:include type="modules" name="mobile-menu" style="xhtml" />		
-		</div>
-	</div></div>
-	
-	<div id="body"><div class="container">
-		<?php if ($this->countModules('top')): ?>
-		<div id="top">
-			<jdoc:include type="modules" name="top" style="xhtml" />
-		</div>
-		<?php endif; ?>
-		<div id="content">
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-		</div>
-		<div id="sidebar">
-			<jdoc:include type="modules" name="sidebar" style="xhtml" />
-		</div>
-		<div class="clear"></div>
-		<?php if ($this->countModules('bottom')): ?>
-		<div id="bottom">
-			<jdoc:include type="modules" name="bottom" style="xhtml" />
+	<div id="wrapper">
+		<div id="header"><div><div class="container">
+			<jdoc:include type="modules" name="header" style="xhtml" />
 			<div class="clear"></div>
-		</div>
-		<?php endif; ?>
-	</div></div>
-	<div class="clear"></div>
+		</div></div></div>
+		
+		<div id="nav"><div class="container">
+			<jdoc:include type="modules" name="nav" style="xhtml" />
+			<div id="mobile-menu" class=" menu-close">
+				<jdoc:include type="modules" name="mobile-menu" style="xhtml" />		
+			</div>
+		</div></div>
+		
+		<div id="body"><div class="container">
+			<?php if ($this->countModules('top')): ?>
+			<div id="top">
+				<jdoc:include type="modules" name="top" style="xhtml" />
+			</div>
+			<?php endif; ?>
+			<div id="content">
+				<jdoc:include type="message" />
+				<jdoc:include type="component" />
+			</div>
+			<div id="sidebar">
+				<jdoc:include type="modules" name="sidebar" style="xhtml" />
+			</div>
+			<div class="clear"></div>
+			<?php if ($this->countModules('bottom')): ?>
+			<div id="bottom">
+				<jdoc:include type="modules" name="bottom" style="xhtml" />
+				<div class="clear"></div>
+			</div>
+			<?php endif; ?>
+		</div></div>
+		<div class="clear"></div>
 
-	<div id="footer"><div><div class="container">
-		<jdoc:include type="modules" name="footer" style="xhtml" />
-		<div class="clear"></div>
-		<div class="copyright">
-				<span class="left">&copy; <?php echo date('Y') ?> The WorkPlace Group. All Rights Reserved.</span>
-				<span class="right">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
-		</div>
-		<div class="clear"></div>
-	</div></div></div>
+		<div id="footer"><div><div class="container">
+			<jdoc:include type="modules" name="footer" style="xhtml" />
+			<div class="clear"></div>
+			<div class="copyright">
+					<span class="left">&copy; <?php echo date('Y') ?> The WorkPlace Group. All Rights Reserved.</span>
+					<span class="right">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
+			</div>
+			<div class="clear"></div>
+		</div></div></div>
+	</div>
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />
