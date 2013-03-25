@@ -1,5 +1,9 @@
+#wrapper {
+	min-width: 960px;
+}
+
 .container {
-	max-width: 960px;
+	width: 960px;
 	padding: 0 10px;
 
 	#header & {
