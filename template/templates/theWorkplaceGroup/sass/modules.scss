@@ -63,6 +63,8 @@
 		.ie7 &,
 		.ie8 & {
 			line-height: 41px;
+			position: relative;
+			z-index: 1;
 		}
 	}
 
@@ -96,6 +98,11 @@
 .moduletable.social-links-nav {
 	float: right;
 	padding: 10px 0 8px;
+
+		.ie8 & img {
+			width: 28px;
+			min-width: 28px;
+		}
 }
 
 .moduletable.social-links-footer {
@@ -103,6 +110,11 @@
 	padding: 10px 0;
 	right: 73px;
 	top: 50px;
+
+	.ie8 & img {
+			width: 28px;
+			min-width: 28px;
+		}
 }
 
 /* sidebar */
