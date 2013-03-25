@@ -21,6 +21,7 @@
 	font-weight: 700;
 	margin: 0 0 .5em 0 !important;
 }
+
 ul.actions {
 	display: inline;
 
@@ -33,6 +34,10 @@ ul.actions {
 		&.print-icon,
 		&.edit-icon {
 			display: none;
+
+			.resource-centre .blog & {
+				//display: none;
+			}
 		}
 	}
 }
