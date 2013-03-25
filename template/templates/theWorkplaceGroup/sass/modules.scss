@@ -59,6 +59,11 @@
 		-moz-border-radius: 10px;
 		border-radius: 10px;
 		behavior: url('../templates/theWorkplaceGroup/resources/PIE.htc');
+
+		.ie7 &,
+		.ie8 & {
+			line-height: 41px;
+		}
 	}
 
 	button {
@@ -136,8 +141,13 @@ fieldset {
 	}
 
 	input {
-		height: 2em; 
-		line-height: 2em;
+		height: 2em;
+		padding: 0 3px;
+
+		.ie7 &,
+		.ie8 & {
+			line-height: 2em;
+		}
 	}
 
 	input[type="checkbox"] {
