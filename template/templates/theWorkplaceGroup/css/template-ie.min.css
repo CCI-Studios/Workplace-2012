@@ -548,7 +548,9 @@ div.container
   -ms-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  width: 105.5%;
+  *zoom: 1; }
   #mobile-menu.menu-close {
     max-height: 0 !important;
     position: relative;
@@ -593,6 +595,9 @@ div.container
       color: #a3b94f;
       text-decoration: none; }
 
+.items-leading > div {
+  position: relative; }
+
 /* @group modules */
 .moduletable.logo {
   margin-bottom: 10px; }
@@ -635,6 +640,8 @@ div.container
   -moz-border-radius: 10px;
   border-radius: 10px;
   behavior: url("../templates/theWorkplaceGroup/resources/PIE.htc"); }
+  .ie7 .moduletable.search input, .ie8 .moduletable.search input {
+    line-height: 41px; }
 .moduletable.search button {
   background: url("../images/bg_searchButton.png") top center no-repeat;
   position: absolute;
@@ -667,7 +674,7 @@ div.container
 /* login */
 div.login > form {
   border: 1px solid #ebe9e8;
-  background: url("../images/bg_bottomModule.jpg") bottom center no-repeat;
+  background: url("../images/bg_bottomModule.jpg") bottom right no-repeat;
   position: relative;
   padding: 10px 8px;
   width: 100%;
@@ -691,7 +698,9 @@ fieldset {
       line-height: 1em; }
   fieldset input {
     height: 2em;
-    line-height: 2em; }
+    padding: 0 3px; }
+    .ie7 fieldset input, .ie8 fieldset input {
+      line-height: 2em; }
   fieldset input[type="checkbox"] {
     height: 1em;
     border: none;
@@ -1281,6 +1290,7 @@ td.list-date {
   overflow: hidden; }
 
 .cal_daylink {
+  font-size: 20px;
   width: 100%;
   text-align: center;
   display: block; }
@@ -1421,6 +1431,7 @@ a.cal_titlelink {
   height: auto; }
 
 .cal_daylink {
+  font-size: 13px;
   width: auto;
   text-align: left;
   padding-left: 2px; }
@@ -1444,7 +1455,7 @@ a.cal_titlelink {
 
 .copyright {
   background: url("../images/bg_copyright.jpg") top center no-repeat;
-  padding: 20px 0 10px; }
+  padding: 20px 0 8px; }
 
 .desktop-visible, .phone-hidden,
 .tablet-hidden, .mobile-hidden {
